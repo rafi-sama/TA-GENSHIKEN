@@ -2,10 +2,4 @@
 
 Semangat gess!
 
-testing testing
-123
-
-testing pull
-123
-
-pull pull
+test push 123 123
