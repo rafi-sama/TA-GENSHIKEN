@@ -1,33 +1,23 @@
-﻿# The script of the game goes in this file.
+﻿# define characters
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+define h1 = Character("Asprak Senpai") # h1 = heroine 1
+define you = Character("You") # you
 
-define e = Character("Eileen")
+# define character images
+image asprak_senpai = "characters/asprak_senpai.png"
 
+# define scene images
+image lab = "scenes/lab.jpg"
 
 # The game starts here.
-
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    # scene 1
+    scene lab
 
-    scene bg room
+    show asprak_senpai at right
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    h1 "Ohayou onii-chan!"
 
     # This ends the game.
-
     return
