@@ -1,3 +1,0 @@
-# TA-GENSHIKEN
-
-Semangat ges!
