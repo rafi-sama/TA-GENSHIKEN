@@ -1,12 +1,11 @@
 ﻿# define characters
-
-define h1 = Character("Asprak Senpai") # h1 = heroine 1
+define h1 = Character("Asprak Senpai") # h1 = heroine 1 / asprak senpai
 define you = Character("You") # you
 
-# define character images
+# character images
 image asprak_senpai = "characters/asprak_senpai.png"
 
-# define scene images
+# scene images
 image lab = "scenes/lab.jpg"
 
 # The game starts here.
@@ -17,7 +16,7 @@ label start:
 
     show asprak_senpai at right
 
-    h1 "Ohayou onii-chan!"
+    h1 "Ara~ ara~ "
 
     # This ends the game.
     return
