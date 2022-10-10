@@ -292,35 +292,51 @@ screen navigation():
     fixed:
         style_prefix "navigation"
         
-        textbutton _("{color=#FFFFFF}{size=+50}[config.name]{/size}{/color}"):
+        # textbutton _("{color=#FFFFFF}{size=+50}[config.name]{/size}{/color}"):
+        #     xalign 0.5
+        #     ypos 50
+
+        textbutton _("{color=#FFFFFF}{size=+50}JUDUL{/size}{/color}"):
             xalign 0.5
             ypos 50
 
-        $ geser_kanan = 220
+        imagebutton auto "gui/mm_button/start_%s.png" focus_mask True action Start()
 
-        textbutton _("{size=+20}Start{/size}") action Start():
-            yalign 0.95
-            xpos 100+geser_kanan
+        imagebutton auto "gui/mm_button/load_%s.png" focus_mask True action ShowMenu("load")
 
-        textbutton _("{size=+20}Load{/size}") action ShowMenu("load"):
-            yalign 0.95
-            xpos 325+geser_kanan
+        imagebutton auto "gui/mm_button/config_%s.png" focus_mask True action ShowMenu("preferences")
 
-        textbutton _("{size=+20}Config{/size}") action ShowMenu("preferences"):
-            yalign 0.95
-            xpos 535+geser_kanan
+        imagebutton auto "gui/mm_button/about_%s.png" focus_mask True action ShowMenu("about")
 
-        textbutton _("{size=+20}About{/size}") action ShowMenu("about"):
-            yalign 0.95
-            xpos 795+geser_kanan
+        imagebutton auto "gui/mm_button/help_%s.png" focus_mask True action ShowMenu("help")
+        
+        imagebutton auto "gui/mm_button/quit_%s.png" focus_mask True action Quit(confirm=not main_menu)
+    
+        # $ geser_kanan = 220
 
-        textbutton _("{size=+20}Help{/size}") action ShowMenu("help"):
-            yalign 0.95
-            xpos 1035+geser_kanan
+        # textbutton _("{size=+20}Start{/size}") action Start():
+        #     yalign 0.95
+        #     xpos 100+geser_kanan
 
-        textbutton _("{size=+20}Quit{/size}") action Quit(confirm=not main_menu):
-            yalign 0.95
-            xpos 1235+geser_kanan
+        # textbutton _("{size=+20}Load{/size}") action ShowMenu("load"):
+        #     yalign 0.95
+        #     xpos 325+geser_kanan
+
+        # textbutton _("{size=+20}Config{/size}") action ShowMenu("preferences"):
+        #     yalign 0.95
+        #     xpos 535+geser_kanan
+
+        # textbutton _("{size=+20}About{/size}") action ShowMenu("about"):
+        #     yalign 0.95
+        #     xpos 795+geser_kanan
+
+        # textbutton _("{size=+20}Help{/size}") action ShowMenu("help"):
+        #     yalign 0.95
+        #     xpos 1035+geser_kanan
+
+        # textbutton _("{size=+20}Quit{/size}") action Quit(confirm=not main_menu):
+        #     yalign 0.95
+        #     xpos 1235+geser_kanan
 
         # if renpy.variant("pc"):
 

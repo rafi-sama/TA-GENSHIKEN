@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 299: imagebutton expects a non-empty block.
+    imagebutton auto "gui/mm_button/start_%s.png" focus_mask True action Start():
+                                                                                 ^
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Mon Oct 10 13:31:40 2022
