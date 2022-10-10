@@ -287,49 +287,48 @@ style quick_button_text:
 
 screen navigation():
 
-    vbox:
+    add "images/overlays/main_menu_overlay.png"
+
+    fixed:
         style_prefix "navigation"
+        
+        textbutton _("{color=#FFFFFF}{size=+50}[config.name]{/size}{/color}"):
+            xalign 0.5
+            ypos 50
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        $ geser_kanan = 220
 
-        spacing gui.navigation_spacing
+        textbutton _("{size=+20}Start{/size}") action Start():
+            yalign 0.95
+            xpos 100+geser_kanan
 
-        if main_menu:
+        textbutton _("{size=+20}Load{/size}") action ShowMenu("load"):
+            yalign 0.95
+            xpos 325+geser_kanan
 
-            textbutton _("Start") action Start()
+        textbutton _("{size=+20}Config{/size}") action ShowMenu("preferences"):
+            yalign 0.95
+            xpos 535+geser_kanan
 
-        else:
+        textbutton _("{size=+20}About{/size}") action ShowMenu("about"):
+            yalign 0.95
+            xpos 795+geser_kanan
 
-            textbutton _("History") action ShowMenu("history")
+        textbutton _("{size=+20}Help{/size}") action ShowMenu("help"):
+            yalign 0.95
+            xpos 1035+geser_kanan
 
-            textbutton _("Save") action ShowMenu("save")
+        textbutton _("{size=+20}Quit{/size}") action Quit(confirm=not main_menu):
+            yalign 0.95
+            xpos 1235+geser_kanan
 
-        textbutton _("Load") action ShowMenu("load")
+        # if renpy.variant("pc"):
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        #     ## The quit button is banned on iOS and unnecessary on Android and
+        #     ## Web.
+        # if _in_replay:
 
-        if _in_replay:
-
-            textbutton _("End Replay") action EndReplay(confirm=True)
-
-        elif not main_menu:
-
-            textbutton _("Main Menu") action MainMenu()
-
-        textbutton _("About") action ShowMenu("about")
-
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
-
-        if renpy.variant("pc"):
-
-            ## The quit button is banned on iOS and unnecessary on Android and
-            ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
-
+        #     textbutton _("End Replay") action EndReplay(confirm=True)
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text
@@ -356,8 +355,8 @@ screen main_menu():
     add gui.main_menu_background
 
     ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
+    # frame:
+    #     style "main_menu_frame"
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
@@ -467,7 +466,51 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
                     transclude
 
-    use navigation
+    # use navigation
+
+    vbox:
+        style_prefix "navigation"
+
+        xpos gui.navigation_xpos
+        yalign 0.5
+
+        spacing gui.navigation_spacing
+
+        if main_menu:
+
+            textbutton _("Start") action Start()
+
+        else:
+
+            textbutton _("History") action ShowMenu("history")
+
+            textbutton _("Save") action ShowMenu("save")
+
+        textbutton _("Load") action ShowMenu("load")
+
+        textbutton _("Config") action ShowMenu("preferences")
+
+        if _in_replay:
+
+            textbutton _("End Replay") action EndReplay(confirm=True)
+
+        elif not main_menu:
+
+            textbutton _("Main Menu") action MainMenu()
+
+        textbutton _("About") action ShowMenu("about")
+
+        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+
+            ## Help isn't necessary or relevant to mobile devices.
+            textbutton _("Help") action ShowMenu("help")
+
+        if renpy.variant("pc"):
+
+            ## The quit button is banned on iOS and unnecessary on Android and
+            ## Web.
+            textbutton _("Quit") action Quit(confirm=not main_menu)
+
 
     textbutton _("Return"):
         style "return_button"
@@ -712,7 +755,7 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Config"), scroll="viewport"):
 
         vbox:
 
