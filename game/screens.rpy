@@ -287,30 +287,25 @@ style quick_button_text:
 
 screen navigation():
 
-    add "images/overlays/main_menu_overlay.png"
-
     fixed:
         style_prefix "navigation"
         
-        # textbutton _("{color=#FFFFFF}{size=+50}[config.name]{/size}{/color}"):
-        #     xalign 0.5
-        #     ypos 50
-
+        # textbutton _("{color=#FFFFFF}{size=+50}[config.name]{/size}{/color}")
         textbutton _("{color=#FFFFFF}{size=+50}JUDUL{/size}{/color}"):
             xalign 0.5
             ypos 50
 
-        imagebutton auto "gui/mm_button/start_%s.png" focus_mask True action Start()
+        imagebutton auto "gui/mm_button/start_%s.png" focus_mask True action Start() hovered [Play("sound", "sound/hover_sound.mp3")]
 
-        imagebutton auto "gui/mm_button/load_%s.png" focus_mask True action ShowMenu("load")
+        imagebutton auto "gui/mm_button/load_%s.png" focus_mask True action ShowMenu("load") hovered [Play("sound", "sound/hover_sound.mp3")]
 
-        imagebutton auto "gui/mm_button/config_%s.png" focus_mask True action ShowMenu("preferences")
+        imagebutton auto "gui/mm_button/config_%s.png" focus_mask True action ShowMenu("preferences") hovered [Play("sound", "sound/hover_sound.mp3")]
 
-        imagebutton auto "gui/mm_button/about_%s.png" focus_mask True action ShowMenu("about")
+        imagebutton auto "gui/mm_button/about_%s.png" focus_mask True action ShowMenu("about") hovered [Play("sound", "sound/hover_sound.mp3")]
 
-        imagebutton auto "gui/mm_button/help_%s.png" focus_mask True action ShowMenu("help")
-        
-        imagebutton auto "gui/mm_button/quit_%s.png" focus_mask True action Quit(confirm=not main_menu)
+        imagebutton auto "gui/mm_button/help_%s.png" focus_mask True action ShowMenu("help") hovered [Play("sound", "sound/hover_sound.mp3")]
+
+        imagebutton auto "gui/mm_button/quit_%s.png" focus_mask True action Quit(confirm=not main_menu) hovered [Play("sound", "sound/hover_sound.mp3")]
     
         # $ geser_kanan = 220
 
