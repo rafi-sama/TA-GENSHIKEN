@@ -287,13 +287,15 @@ style quick_button_text:
 
 screen navigation():
 
+    add "images/ayame.png"
+
     fixed:
         style_prefix "navigation"
         
         # textbutton _("{color=#FFFFFF}{size=+50}[config.name]{/size}{/color}")
-        textbutton _("{color=#FFFFFF}{size=+50}JUDUL{/size}{/color}"):
-            xalign 0.5
-            ypos 50
+        # textbutton _("{color=#FFFFFF}{size=+50}JUDUL{/size}{/color}"):
+        #     xalign 0.5
+        #     ypos 50
 
         imagebutton auto "gui/mm_button/start_%s.png" focus_mask True action Start() hovered [Play("sound", "sound/hover_sound.mp3")]
 
