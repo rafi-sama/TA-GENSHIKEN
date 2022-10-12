@@ -18,5 +18,12 @@ label start:
 
     h1 "Ara~ ara~ "
 
+
+    menu:
+        "ara ara":
+            h1 "ara ara"
+        "sayounara":
+            h1 "sayounara"
+
     # This ends the game.
     return

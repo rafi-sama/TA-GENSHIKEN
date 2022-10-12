@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 299: imagebutton expects a non-empty block.
-    imagebutton auto "gui/mm_button/start_%s.png" focus_mask True action Start():
-                                                                                 ^
+File "game/script.rpy", line 22: Menu does not contain any choices.
+    menu:
+         ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon Oct 10 13:31:40 2022
+Tue Oct 11 14:56:11 2022
