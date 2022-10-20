@@ -1,0 +1,168 @@
+[denotes monologue/MC’s thought]
+
+“Denotes actual dialogue”
+
+*denotes penjelasan aksi atau apalah itu, yang ada di naskah drama
+
+(background)
+
+01 ===[NOT DONE]=================================================================================================== 
+
+(POV orang bangun tidur)
+
+MC  : *wakes up at 06.30 AM on a Monday, checks his phone for time
+	  [Why did I wake up this early? I have no class on Mondays.]
+
+	  *proceeds to close his eyes, then remembers something
+	  [I have a fucking physics practice session this morning.]
+
+02 ===[NOT DONE]=================================================================================================== 
+
+(Beresin tas / barang2)
+
+	  *MC prepares his stuffs and double-timed his way to ITB
+
+03 ===[NOT DONE]=================================================================================================== 
+
+(Gerbang ITB)
+
+MC  : *MC looks at his watch as he passed through the gate, 07.00 AM
+      [Fuck, I’m gonna be late]
+
+04 ===[NOT DONE]=================================================================================================== 
+
+(Pintu masuk lab)
+
+MC  : “Excuse me!” *as he pushed his way to the lab
+ *MC somehow managed to enter the lab just as his group got called by the assistant for briefing
+
+05 ===[NOT DONE]=================================================================================================== 
+
+(Meja lab)
+
+      *MC somehow managed to enter the lab just as his group got called by the assistant for briefing
+MC’s friend	: “Where have you been? We were looking for you.”
+MC		: “Sorry guys, I was-”
+FL1		: *clears throat
+
+06 ===[NOT DONE]=================================================================================================== 
+
+(Papan tulis)
+
+FL1		: “I’ll start the briefing, now that your group is complete. Please note, I’m
+		  giving you *looking at MC some leniency just because this is your first session. Your
+		  next assistant might not be so forgiving. “
+
+		  “Gather all of your preliminary assignments on the desk before we start the test.
+		  Done? Good. Get your pen and papers, here’s your test.” *flips the whiteboard
+
+07 ===[NOT DONE]=================================================================================================== 
+
+(Meja lab)
+
+MC		: [What the hell am I looking at?] *scribbles
+          [What in the fuck is regression analysis]
+
+FL1		: “Five minutes remaining.”
+
+MC		: “Bro, could you help me out on that regression thing?”
+
+MC’s Friend	: “(MC’s name), you passed 8th grade, right? You literally only have to find the
+		slope of that equation. The. Slope. Of. The. Equation.”
+
+MC		: “How?”
+
+MC’s friend	: “It’s literally written on the damn equation.”
+
+08 ===[NOT DONE]=================================================================================================== 
+
+(Papan tulis)
+
+FL1		: “Alright, time’s up, hand them in.” *looks at MC’s paper
+*under her breath “What is wrong with this kid.”
+“‘Kay, I’m (insert name), registration number (insert NIM), and I’m going to be
+	your practice assistant for today. If you need any help for today’s session, feel free
+	to reach out. Your module for today will be Measurement and Physical Data
+	Processing. I want you guys to split into three groups to make things faster.
+	First group, follow me to the barometer …”
+
+
+09 ===[NOT DONE]=================================================================================================== 
+
+(Meja lab)
+
+*time skip, MC’s group is tasked with this bad boy
+
+<gambar Regresi Linier>
+
+*big F to him
+
+FL1		: *approaches MC, who is trying to figure out how to use a vernier caliper
+		“You got the length of the first block, already?
+
+MC		: “Uhh, yeah? It’s *looking at the caliper around 9.255 cm.”
+
+FL1		: “What? How on earth did you get that number? Let me check.” *measures
+		“It says 9.55 cm.”
+
+MC		: “But-”
+
+FL1		: “You learned this back in middle school, dummy. You’re supposed to understand
+		this thing from the preliminaries. Geez. Now go weigh them at the scale.”
+
+MC:		: “Ah, okay. I’m, uhh, gonna weigh them now.” *nervous chuckle
+		[Fuck, I’m getting scolded]
+
+FL1		: “Alright, the time for measurement is up. Get your journals, we’re writing the
+		Report. Before we start, I want to stress that the bulk of the score is at the
+		observation and discussion part of your report, so make them well. Also, for Group
+		4, you can take out your calculators to get the regression equation.”
+
+MC		: “Oh, no.” *fumbles around his bag and lab coat
+
+FL1		: “Is something the matter, (MC)?”
+
+MC		: “Uhh, yeah. I think I left my calculator back at my dorm.”
+
+FL1		: “And I thought you couldn’t mess up more. Go pair up with a friend.” *scolds
+		menacingly
+
+*time skips, reports are submitted
+
+FL1		: “Aaand, we’re done. Thank you for coming to today’s session. (MC), a word?”
+		*signs for MC to come
+
+MC		: “Am I in trouble?”
+
+FL1		: “For now, no. But you have taken quite the attention of other assistants. The
+		assistants and practice chief have agreed to not go too rough on minor infractions,
+		but looking at how your practice went, I think I have to warn you. Just make sure to
+		come on time and come prepared. Capiche?”
+MC		: “Understood.”
+
+FL1		: “Good. Have a nice day, take care.”
+
+MC		: *pack his things and left the lab
+
+
+10 ===[NOT DONE]=================================================================================================== 
+
+(Jalanan diluar)
+
+		[Well that went fantastic. Getting myself in the assistant’s sight. What a wonderful way to start my week.]
+		*still walking, reminisces on FL1
+		[But she’s a lowkey cutie, though.]
+
+*time skip to the afternoon, MC has finished his class for the day and just arrived at his mix-gender dorm
+
+11 ===[NOT DONE]=================================================================================================== 
+
+(Kamar / Kasur?)
+
+FL1		: *laying down on his bed
+		[Man, do I not love studying in ITB.}
+		*reminisces on FL1 again
+		[Stop thinking about her, you simp.]
+		*stomach rumbles
+		[Welp, I guess it’s raid-the-fridge o’clock.]
+
