@@ -289,7 +289,7 @@ style quick_button_text:
 
 screen navigation():
 
-    add "images/ayame.png"
+    # add "images/asprak.png"
 
     fixed:
         style_prefix "navigation"

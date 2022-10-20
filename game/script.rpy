@@ -16,7 +16,7 @@ label start:
 
     show asprak_senpai at right
 
-    h1 "Ara~ ara~ "
+    h1 "Ara~ ara~"
 
 
     menu:
