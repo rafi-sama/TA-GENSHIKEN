@@ -1,22 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 26, in script
-    h2 "sayounara"
-Exception: Sayer 'h2' is not defined.
+  File "game/script.rpy", line 17, in script
+    show asprak senpai at right
+Exception: Image 'asprak' does not accept attributes 'senpai'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 26, in script
-    h2 "sayounara"
-  File "D:\Renpy\renpy-8.0.3-sdk\renpy\ast.py", line 881, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "D:\Renpy\renpy-8.0.3-sdk\renpy\ast.py", line 774, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'h2' is not defined.
+  File "game/script.rpy", line 17, in script
+    show asprak senpai at right
+  File "D:\Renpy\renpy-8.0.3-sdk\renpy\ast.py", line 1408, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\Renpy\renpy-8.0.3-sdk\renpy\ast.py", line 1371, in show_imspec
+    renpy.config.show(name,
+  File "D:\Renpy\renpy-8.0.3-sdk\renpy\exports.py", line 686, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "D:\Renpy\renpy-8.0.3-sdk\renpy\display\image.py", line 414, in find_target
+    self.target = target._duplicate(a)
+  File "D:\Renpy\renpy-8.0.3-sdk\renpy\display\core.py", line 397, in _duplicate
+    args.extraneous()
+  File "D:\Renpy\renpy-8.0.3-sdk\renpy\display\core.py", line 265, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'asprak' does not accept attributes 'senpai'.
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
 TA GENSHIKEN 1.0
-Tue Oct 11 15:02:08 2022
+Sun Oct 23 14:04:35 2022

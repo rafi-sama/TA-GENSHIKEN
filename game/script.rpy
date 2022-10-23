@@ -1,5 +1,5 @@
 ﻿# define characters
-define h1 = Character("Asprak Senpai") # h1 = heroine 1 / asprak senpai
+define h1 = Character("Heroine") # h1 = heroine 1 / asprak senpai
 define you = Character("You") # you
 
 # character images
@@ -12,18 +12,14 @@ image lab = "scenes/lab.jpg"
 label start:
 
     # scene 1
-    scene lab
+    scene background
 
-    show asprak_senpai at right
+    show heroine at right
 
-    h1 "Ara~ ara~"
+    h1 "Ohayou"
+    h1 "Ohayou1"
+    h1 "Ohayou2"
 
-
-    menu:
-        "ara ara":
-            h1 "ara ara"
-        "sayounara":
-            h1 "sayounara"
 
     # This ends the game.
     return

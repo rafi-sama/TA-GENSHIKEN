@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 22: Menu does not contain any choices.
-    menu:
-         ^
+File "game/screens.rpy", line 261: '_' is not a keyword argument or valid child for the textbutton statement.
+    textbutton auto _("[Back%s]") action Rollback()
+                     ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Oct 11 14:56:11 2022
+Sun Oct 23 13:57:19 2022
