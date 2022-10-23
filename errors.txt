@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 261: '_' is not a keyword argument or valid child for the textbutton statement.
-    textbutton auto _("[Back%s]") action Rollback()
-                     ^
+File "game/script.rpy", line 34: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+    "
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun Oct 23 13:57:19 2022
+Sun Oct 23 19:09:14 2022

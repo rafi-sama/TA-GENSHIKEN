@@ -108,6 +108,7 @@ screen say(who, what):
                 style "namebox"
                 text who id "who"
 
+
         text what id "what"
 
 
@@ -144,6 +145,8 @@ style namebox:
     xsize gui.namebox_width
     ypos gui.name_ypos
     ysize gui.namebox_height
+    xoffset -220
+    yoffset -95
 
     background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
@@ -151,9 +154,8 @@ style namebox:
 style say_label:
     properties gui.text_properties("name", accent=True)
     xalign gui.name_xalign
-    xoffset -220
     yalign 0.5
-    yoffset -95
+
 
 
 style say_dialogue:

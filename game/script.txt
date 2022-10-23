@@ -6,7 +6,7 @@
 
 (background)
 
-01 ===[NOT DONE]=================================================================================================== 
+01 ===[DONE]=================================================================================================== 
 
 (POV orang bangun tidur)
 
@@ -16,27 +16,27 @@ MC  : *wakes up at 06.30 AM on a Monday, checks his phone for time
 	  *proceeds to close his eyes, then remembers something
 	  [I have a fucking physics practice session this morning.]
 
-02 ===[NOT DONE]=================================================================================================== 
+02 ===[DONE]=================================================================================================== 
 
 (Beresin tas / barang2)
 
 	  *MC prepares his stuffs and double-timed his way to ITB
 
-03 ===[NOT DONE]=================================================================================================== 
+03 ===[DONE]=================================================================================================== 
 
 (Gerbang ITB)
 
 MC  : *MC looks at his watch as he passed through the gate, 07.00 AM
       [Fuck, I’m gonna be late]
 
-04 ===[NOT DONE]=================================================================================================== 
+04 ===[DONE]=================================================================================================== 
 
 (Pintu masuk lab)
 
 MC  : “Excuse me!” *as he pushed his way to the lab
- *MC somehow managed to enter the lab just as his group got called by the assistant for briefing
 
-05 ===[NOT DONE]=================================================================================================== 
+
+05 ===[DONE]=================================================================================================== 
 
 (Meja lab)
 
@@ -45,7 +45,7 @@ MC’s friend	: “Where have you been? We were looking for you.”
 MC		: “Sorry guys, I was-”
 FL1		: *clears throat
 
-06 ===[NOT DONE]=================================================================================================== 
+06 ===[DONE]=================================================================================================== 
 
 (Papan tulis)
 
@@ -56,7 +56,7 @@ FL1		: “I’ll start the briefing, now that your group is complete. Please not
 		  “Gather all of your preliminary assignments on the desk before we start the test.
 		  Done? Good. Get your pen and papers, here’s your test.” *flips the whiteboard
 
-07 ===[NOT DONE]=================================================================================================== 
+07 ===[DONE]=================================================================================================== 
 
 (Meja lab)
 
@@ -74,7 +74,7 @@ MC		: “How?”
 
 MC’s friend	: “It’s literally written on the damn equation.”
 
-08 ===[NOT DONE]=================================================================================================== 
+08 ===[DONE]=================================================================================================== 
 
 (Papan tulis)
 
@@ -87,7 +87,7 @@ FL1		: “Alright, time’s up, hand them in.” *looks at MC’s paper
 	First group, follow me to the barometer …”
 
 
-09 ===[NOT DONE]=================================================================================================== 
+09 ===[DONE]=================================================================================================== 
 
 (Meja lab)
 
@@ -145,7 +145,7 @@ FL1		: “Good. Have a nice day, take care.”
 MC		: *pack his things and left the lab
 
 
-10 ===[NOT DONE]=================================================================================================== 
+10 ===[DONE]=================================================================================================== 
 
 (Jalanan diluar)
 
@@ -155,7 +155,7 @@ MC		: *pack his things and left the lab
 
 *time skip to the afternoon, MC has finished his class for the day and just arrived at his mix-gender dorm
 
-11 ===[NOT DONE]=================================================================================================== 
+11 ===[DONE]=================================================================================================== 
 
 (Kamar / Kasur?)
 
