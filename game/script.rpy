@@ -368,6 +368,40 @@ label start:
     "*time skip to the afternoon, he went straight to the physics lab building and wait outside"
 
     you "\[Guess she's not here. Well, nice try, I guess.\]"
-    you "MC heads back to his dorm"
+
+    scene kamar
+    you "MC heads back to his dorm and got to his room"
+    you "*stomach rumbles"
+    you "\[I literally just ate four hours ago.\]"
+    you "*rumbles some more"
+    you "\[Now, should I order a balanced meal like a responsible college student should or should I order diabetes incarnate?\]"
+    you "*spoiler alert, his intrusive thought wins"
+    you "\[A wise person once said an apple a day keeps the doctor away. Unfortunately, I’m not a wise guy.\]"
+    you "*orders a martabak manis/terang bulan/hok lo pan/kue bandung/apam balik/whatever the fuck you call it"    
+
+    scene ruang_tamu
+    you "*his order arrives. He takes it and went to the lounge"
+    you "*sees FL1 on her phone"
+    you "\[Time to shoot my shot\]"
+    you "Fancy seeing you here."
+
+    h1 "*kinda startled"
+    h1 "Hey, didn’t see you there."
+    
+    you "*sits down"
+    you "Do you mind?" #point to the sofa
+
+    h1 "*pats the cushion"
+    h1 "C'mere."
+
+    you "Nice."
+    you "*open the martabak"
+    you "Here, take some."
+
+    h1 "Ah, thank you."
+
+    you "*turns the tv on"
+
+
 
     return
