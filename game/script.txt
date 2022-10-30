@@ -424,5 +424,34 @@ MC		: [Meh, I’ll look for her at the lab after class.]
 		*time skip to the afternoon, he went straight to the physics lab building and wait
 		outside
 		[Guess she’s not here. Well, nice try, I guess.]
-		*MC heads back to his dorm
+		*MC heads back to his dorm and got to his room
+		*stomach rumbles
+		[I literally just ate four hours ago.]
+		*rumbles some more
+		[Now, should I order a balanced meal like a responsible college student should or
+		should I order diabetes incarnate?] *spoiler alert, his intrusive thought wins
+		[A wise person once said an apple a day keeps the doctor away. Unfortunately, I’m
+		not a wise guy.]
+		*orders a martabak manis/terang bulan/hok lo pan/kue bandung/apam balik/whatever the
+		fuck you call it
+		*his order arrives. He takes it and went to the lounge
+		*sees FL1 on her phone
+		[Time to shoot my shot]
+		“Fancy seeing you here.”
 
+FL1		: *kinda startled
+		“Hey, didn’t see you there.”
+
+MC		: *sits down
+		“Do you mind?” *point to the sofa
+
+FL1		: *pats the cushion
+		“C’mere.”
+
+MC		: “Nice.”
+		*opens the martabak
+		“Here, take some.”
+
+FL1		: “Ah, thank you.”
+
+MC		: *turns the TV on
