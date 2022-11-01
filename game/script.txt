@@ -455,3 +455,78 @@ MC		: “Nice.”
 FL1		: “Ah, thank you.”
 
 MC		: *turns the TV on
+		*they both sat and enjoy the sweet delicacy in silence
+		[Gotta break the ice.]
+		“So, uhhh, what’re you doing?”
+
+FL1		: “Oh, nothing. Just chilling and hunting for new mangas.”
+
+MC		: [Oh yeah, she’s a closet weeb.]
+		“Oh really? You really didn’t look like someone who would indulge herself in
+		reading man-”
+
+FL1		: *throws a pillow at MC
+		“Shut.”
+
+MC		: “Ow.”
+
+FL1		: “Anyway, got any recommendations?”
+
+MC		: “Meh, I don’t know. Do you have any genre preferences in mind?”
+
+FL1		: “Anything with a lot of actions, especially the ones with some fantasy or magic or
+		whatever you call it.”
+
+MC		: “Are isekais okay?”
+
+FL1		: “Preferably not, too cliche.”
+
+MC		: “Well shit. Fate?”
+
+FL1		: “I have watched, played, and read the franchise to oblivion.”
+
+MC		: *kinda shocked pikachu face
+		[H-hol up. Played? S-she couldn’t have played the OG VN right?]”
+
+FL1		: “Hey, are you okay? You look pretty shocked knowing I watch Fate.”
+
+MC		: “Ah, nothing wrong. It’s just that I rarely find someone that watches fate, too. By
+		the way, which one is your favorite?”
+
+FL1		: “Surprisingly, Today’s Menu for the Emiya Family. I think I got sick of all the misery
+		sometime in the middle of reading Strange Fake.”
+
+MC		: “Very understandable.”
+		“Have you tried Garden of Sinners?”
+
+FL1		: “Huh, didn’t think of that. I’ve watched the anime, but I haven’t really thought
+		of reading the light novels. You know where to get them?”
+
+MC		: “Uhh, maybe try the book store? I’d find a couple hidden gems here and there
+		sometimes.”
+
+FL1		: *smiles
+		“I’ll try.”
+
+MC		: “Though if I were you, I'd just sail the high seas.”
+
+FL1		: “Ah, a fellow corsair.”
+
+MC		: *laughs
+		“By the way, do you really love Fate that much?”
+
+FL1		: “Well, yes, at least when it comes to franchises. Shit slaps. I mean, where else can
+		you find King Arthur portrayed as women. Mind the plural form.”
+
+MC		: “Shiiiiieeet. Coming to it, I’m quite surprised that FGO or Type-Moon has yet to
+		make a Monty Python reference.”
+
+FL1		: “Yeah, I really expected Artoria to ask something about swallows at least once.”
+
+MC		: “By the way, have you tried Tsukihime?”
+
+FL1		: “I have. As a matter of fact, I just finished the new one last week. Both routes.”
+
+MC		: “Damn.”
+
+FL1		: “By the way, got any anime of your liking?”
