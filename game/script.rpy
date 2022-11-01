@@ -402,6 +402,75 @@ label start:
 
     you "*turns the tv on"
 
+    "*they both sat and enjoy the sweet delicacy in silence"
+
+    you "\[Gotta break the ice.\]"
+    you "So, uhhh, what’re you doing?"
+
+    h1 "Oh, nothing. Just chilling and hunting for new mangas."
+
+    you "\[Oh yeah, she’s a closet weeb.\]"
+    you "Oh really? You really didn’t look like someone who would indulge herself in reading man-"
+
+    h1 "*throws a pillow at MC" #koordinasikan dengan writer/rafi/dll
+    h1 "Shut."
+
+    you "Ow."
+
+    h1 "Anyway, got any recommendations?"
+
+    you "Meh, I don’t know. Do you have any genre preferences in mind?"
+
+    h1 "Anything with a lot of actions, especially the ones with some fantasy or magic or whatever you call it."
+
+    you "Are isekais okay?"
+
+    h1 "Preferably not, too cliche."
+
+    you "Well shit. Fate?"
+    
+    h1 "I have watched, played, and read the franchise to oblivion."
+
+    you "*kinda shocked pikachu face"
+    you "\[H-hol up. Played? S-she couldn’t have played the OG VN right?\]"
+
+    h1 "Hey, are you okay? You look pretty shocked knowing I watch Fate."
+    
+    you "Ah, nothing wrong. It’s just that I rarely find someone that watches fate, too. By the way, which one is your favorite?"
+
+    h1 "Surprisingly, Today’s Menu for the Emiya Family. I think I got sick of all the misery sometime in the middle of reading Strange Fake."
+
+    you "Very understandable."
+    you "Have you tried Garden of Sinners?"
+
+    h1 "Huh, didn’t think of that. I’ve watched the anime, but I haven’t really thought of reading the light novels. You know where to get them?"
+
+    you "Uhh, maybe try the book store? I’d find a couple hidden gems here and there sometimes."
+
+    h1 "*smiles"
+    h1 "I’ll try."
+
+    you "Though if I were you, I'd just sail the high seas."
+
+    h1 "Ah, a fellow corsair."
+
+    you "*laughs" #ntar pake sfx ketawa
+    you "By the way, do you really love Fate that much?"
+
+    h1 "Well, yes, at least when it comes to franchises. Shit slaps. I mean, where else can you find King Arthur portrayed as women. Mind the plural form."
+
+    you "Shiiiiieeet. Coming to it, I’m quite surprised that FGO or Type-Moon has yet to make a Monty Python reference."
+
+    h1 "Yeah, I really expected Artoria to ask something about swallows at least once."
+
+    you "By the way, have you tried Tsukihime?"
+
+    h1 "I have. As a matter of fact, I just finished the new one last week. Both routes."
+
+    you "Damn."
+    
+    h1 "By the way, got any anime of your liking?"
+
 
 
     return
