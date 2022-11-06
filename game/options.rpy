@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("TA GENSHIKEN")
+define config.name = _("My Cute Asprak is My Neighbour")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "TAGENSHIKEN"
+define build.name = "My_Cute_Asprak_is_My_Neighbour"
 
 
 ## Sounds and music ############################################################
@@ -143,7 +143,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "TAGENSHIKEN-1665218721"
+define config.save_directory = "MyCuteAsprakIsMyNeighbour-1665218721"
 
 
 ## Icon ########################################################################

@@ -22,14 +22,14 @@ image asprak_wink = "characters/Asprak_Labcoat_Wink.png"
 # image asprak_senpai_blush
 # image asprak_senpai_cry
 # image asprak_nutup_mata
-
 image asprak_disgust = "characters/Asprak_Labcoat_Disgust.png"
-image tangan hp = "characters/pegang_hp.png"
-# image friend_1
-# image ag
-# image friend_2
-# image waitress1 
 
+image tangan hp = "characters/pegang_hp.png"
+
+image friend_1 casual = "characters/friend_1_casual.png"
+image friend_1 lab = "characters/friend_1_lab.png"
+image friend_2 = "characters/friend_2.png"
+image ag = "characters/attendance_guy.png"
 
 # background
 
@@ -65,8 +65,8 @@ image kos luar = "scenes/kos_luar.jpg"
 image lab barometer = "scenes/lab_barometer.jpg"
 image lab komputer1 = "scenes/lab_komputer1.jpg"
 image lab komputer2 = "scenes/lab_komputer2.jpg"
-image lab datang = "scenes/lab_kosong.jpg"
-image lab kosong = "scenes/lab_datang.jpg"
+image lab datang = "scenes/lab_datang.jpg"
+image lab kosong = "scenes/lab_kosong.jpg"
 image lab pulang = "scenes/lab_pulang.jpg"
 image lab loker_buka = "scenes/lab_loker_buka.jpg"
 image lab loker_tutup = "scenes/lab_loker_tutup.jpg"
@@ -99,10 +99,11 @@ define audio.bukujatoh = "sound/sfx/bukujatoh.mp3"
 label start:
     play sound alarm loop
 
+    play voice yawn noloop
+
     scene black with Dissolve(4)
 
     # play music "sound/Bar_at_the_port.mp3" loop 
-    play sound yawn loop
 
     scene kamar bangun_blink with Dissolve(3)
 
@@ -145,6 +146,8 @@ label start:
     
     scene lab komputer1
 
+    show friend_1 lab at left
+
     friend "Where have you been? We were looking for you."
     you "Sorry guys, I was-"
 
@@ -163,7 +166,7 @@ label start:
     h1 "Done? Good. Get your pen and papers, here's your test."
     h1 "*flips the whiteboard"
 
-    scene lab papan3
+    scene lab papan2
 
     you "\[What the hell am I looking at?\]"
     you "\[What in the actual fuck is regression analysis\]"
@@ -174,6 +177,8 @@ label start:
 
     h1 "Five minutes remaining."
     hide asprak_smile_1
+
+    show friend_1 lab at left
 
     you "Bro, could you help me out on that regression thing?"
     friend "Bro.. you passed 8th grade, right?"
@@ -401,9 +406,8 @@ label start:
 
     scene kelas1
 
-    show asprak_senpai
     you "*reminisces about FL1 back at the lab"
-    hide asprak_senpai
+
     you "*reminisces about the incident yesterday"
     you "\[She's damn cute, I get that. But I didn't expect that big of a gap moe.\]"
     you "*reminiscing how flustered she got when they walk together"
@@ -422,7 +426,7 @@ label start:
     you "*bumps into his friend"
     you "Oh hey, getting some chow, too?"
 
-    show friend_1 at right
+    show friend_1 casual at right
     friend "Hey! Yeah. Didn't understand anything at class, my brain was too busy asking whether I should buy ayam geprek or ayam penyet for lunch."
 
     you "Damn, same. By the way, got any seats yet?"
@@ -551,9 +555,8 @@ label start:
     you "*turns off alarms"
     show pegang_hp with moveoutbottom
 
-    show asprak_senpai
     you "*reminisces on yesterday's encounter with senpai"
-    hide asprak_senpai
+
     you "\[Welp, better get ready and find her again.\]"
 
     "*time skip to lunch"
@@ -563,7 +566,7 @@ label start:
     you "*orders his food and looks around the cafeteria"
     you "\[Where is she?\]"
 
-    show friend_1
+    show friend_1 casual
     friend "Yo! Wanna join us?"
     you "\[Meh, I'll look for her at the lab after class.\]"
 
@@ -596,9 +599,9 @@ label start:
         
     "*his order arrives. He takes it and went to the lounge"
 
-    scene sofa pov
+    scene kos sofa_far
 
-    you "*sees FL1 on her phone"
+    you "*sees senpai on her phone"
     you "\[Time to shoot my shot\]"
     you "Fancy seeing you here."
 
@@ -610,7 +613,14 @@ label start:
     h1 "Hey, didn't see you there."
 
     you "*sits down"
+
+    scene kos sofa_duduk
+
+    show asprak_surprised at right
+
     you "Do you mind?" #*point to the sofa
+
+    show asprak_smile_1 at right
 
     h1 "*pats the cushion"
     h1 "C'mere."
@@ -620,6 +630,8 @@ label start:
     you "Here, take some."
 
     h1 "Ah, thank you."
+
+    scene kos meja_laptop
 
     you "*turns the TV on"
     hide asprak_senpai
@@ -760,6 +772,8 @@ label start:
 
     "*time skip to praktikum 2. MC's having an all-nighter trying to speedrun TP Fisika. Sadly, his WD-40 lubed brain is having a pretty hard time"
 
+    scene kos mejabelajar
+    
     you "\[GOTTA FINISH THE FLOWCHARTS.\]"
     you "*checks his phone, his friend that had done his module the week before sends the procedure to derive an equation or something"
     you "*got a step wrong"
@@ -775,19 +789,25 @@ label start:
 
     "*time skip to the actual praktikum"
 
+    scene lab pintu_lab
+
     you "*arrives at the lab entrance"
     you "*takes his nametag off and presents it to the air"
 
-    show ag at right
+    show ag at left
     ag "Uhh, hey. I'm right here."
 
     you "*got up from his trance and walked to the scanner"
     you "Oh, yeah. Sorry."
+
     hide ag 
 
     you "*enters the lab and goes to his desk"
 
+    scene lab papan1
+
     show asprak_senpai at right
+
     h1 "*notices"
     h1 "Huh?, a word?" 
 
@@ -826,6 +846,8 @@ label start:
     show asprak_surprised at right
     "*Suddenly, he faints on his way to the desk"
     hide asprak_surprised
+
+    scene uks
 
     "*After some time, he wakes up in the infirmary"
 
@@ -882,11 +904,11 @@ label start:
 
     "*time skip to the next day"
 
+    scene pov_bangun_tidur
+
     you "*sits inside his room, he's free on Fridays"
 
-    show asprak_senpai
     you "*reminiscing the lap pillow and headpats"
-    hide asprak_senpai
 
     you "\[GAHD DAMN.\]"
     you "\[I NEED IT MORE.\]"
@@ -896,6 +918,8 @@ label start:
     you "*decides to take a shower"
     you "*gets dressed and gets out of his room"
     you "*opens his door"
+
+    scene kos bukapintu
 
     show asprak_senpai at right
     you "*FL1 stands right in front of it"
@@ -948,6 +972,10 @@ label start:
 
     "*time skip to the afternoon"
 
+    scene kos sofa_far
+
+    show asprak_senpai at right
+
     you "*got out of his room at 4 and finds FL1 already waiting at the dorm's lounge"
 
     # show asprak_senpai at right
@@ -958,14 +986,23 @@ label start:
     #*they walked to an alternate version of Jatos
     #you *looking at the movie schedule
 
+    scene jatos
+
+    show asprak_senpai at left
+
     you "You got anything in mind?"
 
     h1 "I thought you already had the tickets."
+
 
     you "I have a promo for two free tickets, we can still choose the movie."
 
     h1 "Ah, I see."
     h1 "Miracle in Cell No. 7 it is, then."
+
+    scene xxi
+
+    show asprak_senpai at left
 
     you "Alright."
     you "Two tickets for Miracle in Cell No. 7, please."
@@ -1003,6 +1040,10 @@ label start:
 
     # hide asprak_senpai_blush
     "*time skip, they arrive at their dorm"
+
+    scene kos luar
+
+    show asprak_senpai at right
     
     # show asprak_senpai at right
     h1 "Hey btw. Thank you so, so much for the, uuuhmmm, outing."
@@ -1036,10 +1077,15 @@ label start:
 
     "*time skip, a couple days later, at lunch time"
 
+    scene kantin ramai2
+
     you "*has got his food and is looking for a seat"
     you "*sees the spot in front of FL1 is empty"
 
+    scene kantin meja
+
     show asprak_senpai at right
+
     h1 "*sees him and waves"
 
     you "*scoots there"
@@ -1058,6 +1104,7 @@ label start:
     you "Online class, the lecturer's sick, so I'm going to-"
 
     show friend_2 at left
+
     friend2 "Hey, girl. How've you been?"
 
     h1 "*caught off guard"
@@ -1107,12 +1154,15 @@ label start:
     # hide asprak_senpai
     # show asprak_senpai_blush at right
     h1 "Shut. Just eat your damn meal."
+
     hide asprak_senpai # hide asprak_senpai # hide asprak_senpai_blush
 
     you "\[T-This can't be.\]"
     you "\[God, I love her.\]"
 
     "*time skip to Thursday"
+
+    scene kos meja
 
     "*MC just finished Praktikum 2 Pengkom"
     "*he couldn't understand a thing"
@@ -1124,6 +1174,7 @@ label start:
     "*calls FL1"
 
     show asprak_senpai at right
+
     h1 "Moshi-moshi."
 
     you "Hey, how's it going? You good?"
@@ -1146,6 +1197,10 @@ label start:
 
     #"*they walk outside"
 
+    scene kos luar
+
+    show asprak_senpai at right
+
     h1 "So, you know where we're going?"
 
     you "Good question, I have no idea."
@@ -1159,6 +1214,10 @@ label start:
     # MIXUE
 
     h1 "Ta da."
+
+    scene mixue
+
+    show asprak_senpai at right
 
     you "Ice cream?"
 
@@ -1220,9 +1279,7 @@ label start:
 
     you "Uhhh."
 
-    show waitress1 at left
     waitress "Order number 66."
-    hide waitress1
 
     h1 "Hey, that's ours."
     h1 "*takes the order"
