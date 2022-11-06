@@ -6,6 +6,26 @@ define ag = Character("‎     Attendance Guy   ‎")
 define friend2 = Character("‎     Senpai's Friend   ‎")
 define waitress = Character("‎     Waitress   ‎")
 
+# gambar chara
+## 
+transform kiri:
+    xalign 0
+    yalign 1.0
+transform kanan:
+    xalign 1.0
+    yalign 1.0
+
+image asprak_senpai = "characters/Asprak_Labcoat_Smile.png"
+image asprak_smile_1 = "characters/Asprak_Labcoat_Smile1.png"
+image asprak_surprised ="characters/Asprak_Labcoat_Suprised.png"
+image asprak_wink = "characters/Asprak_Labcoat_Wink.png"
+image asprak_disgust = "characters/Asprak_Labcoat_Disgust.png"
+image tangan hp = "characters/pegang_hp.png"
+# image friend_1
+# image ag
+# image friend_2
+# image waitress1 
+
 # background
 
 image black = "black.png"
@@ -145,7 +165,11 @@ label start:
 
     scene lab meja
 
+    show asprak_smile_1 at right
+
     h1 "Five minutes remaining."
+    hide asprak_smile_1
+
     you "Bro, could you help me out on that regression thing?"
     friend "Bro.. you passed 8th grade, right?"
     friend "You literally only have to find the slope of that equation. The. Slope. Of. The. Equation."
@@ -153,7 +177,8 @@ label start:
     friend "It's literally written on the damn equation."
 
     scene lab papan2
-
+    
+    show asprak_senpai at right
     h1 "Alright, time's up, hand them in."
     h1 "*looks at MC's paper"
     h1 "*under her breath"
@@ -174,13 +199,25 @@ label start:
     "*time skip, MC's group is tasked with this bad boy"
     "Insert gambar regresi linier"
     "*big F to him"
+    
+    show asprak_senpai at right
+
     h1 "*approaches MC, who is trying to figure out how to use a vernier caliper"
     h1 "You got the length of the first block, already?"
+
     you "Uhh, yeah? It's *looking at the caliper around 9.255 cm."
+
+    show asprak_surprised at right
     h1 "What? How on earth did you get that number? Let me check."
+    
+    
     you "*measures"
+
+    show asprak_disgust at right
     h1 "It says 9.55 cm."
+
     you "But-"
+
     h1 "You learned this back in middle school, dummy. You're supposed to understand this thing from the preliminaries."
     h1 "Now go weigh them at the scale."
     you "Ah, okay. I'm, uhh, gonna weigh them now."
@@ -191,24 +228,32 @@ label start:
 
     scene lab papan2
 
+    show asprak_senpai at right
     h1 "Alright, the time for measurement is up. Get your journals, we're writing the Report."
     h1 "Before we start, I want to stress that the bulk of the score is at the observation and discussion part of your report, so make them well."
     h1 "Also, for Group 4, you can take out your calculators to get the regression equation."
+
+    hide asprak_senpai
     you "Oh, no."
 
     scene lab loker_buka
 
     you "*fumbles around his bag and lab coat"
+
+    show asprak_senpai at right
     h1 "Is something matter?"
 
     scene lab loker_tutup
-
+    show asprak_senpai at right
     you "Uhh, yeah. I think I left my calculator back at my dorm."
+
+    show asprak_disgust at right
     h1 "And I thought you couldn't mess up more. Go pair up with a friend."
     "*time skips, reports are submitted"
-
+    hide asprak_disgust
     scene lab papan2
 
+    show asprak_senpai at right
     h1 "Aaand, we're done. Thank you for coming to today's session."
     h1 "(MC), a word?"
     you "Am I in trouble?"
@@ -217,6 +262,8 @@ label start:
     h1 "Just make sure to come on time and come prepared. Capiche?"
     you "Understood."
     h1 "Good. Have a nice day, take care."
+    hide asprak_senpai
+
     you "*pack his things and left the lab"
 
     scene lab lorong_pulang
@@ -260,6 +307,7 @@ label start:
 
     you "Uhh, hi?"
 
+    show asprak_surprised at right
     h1 "*squeals"
     h1"YOU DIDN'T SEE ANYTHING!"
     h1"*FL1 grabs her stuff and sprints to her room"
@@ -274,12 +322,15 @@ label start:
     scene dapur_kulkas ###########
 
     you "*returns the oreo and heads back to his room"
-    
-    scene pov_bangun_tidur
 
     "*time skip to the next day"
-    "*alarms blaring, MC wakes up, still can't wrap his head around yesterday's incident"
+    scene pov_bangun_tidur
 
+
+    show tangan hp with moveinbottom
+    "*alarms blaring, MC wakes up, still can't wrap his head around yesterday's incident"
+    hide tangan with moveoutbottom
+    
     you "\[Did yesterday really happen? Was that really her?\]"
     you "*reminisces once more, fuckin simp"
     you "\[Why can't I stop thinking about her?\]"
@@ -289,7 +340,9 @@ label start:
     scene kos bukapintu
 
     you "Ah, sorry. Didn't see you th-"
+    show asprak_surprised
     "*Of course, it's FL1. They stare each other for quite some time before the silence got broken by MC's alarm. He reaches into his pocket and looks at his phone"
+    hide asprak_surprised
     you "\[Oh shit, only half an hour remaining before class. Better get going now.\]"
 
     scene kos gerbang
@@ -307,28 +360,35 @@ label start:
     scene jalan motor2
 
     you "Uhh, hey! Hey! How are you this morning?" 
+
+    show asprak_disgust at right #mungkin bakal ada ekspresi lain
     h1 "*doesn't answer, eyes straight ahead"
 
     you "Uhh, you remember me, right? It's (insert MC's name), from the lab yesterda-"
 
     scene jalan mobil1
 
+    show asprak_smile_1 at right
     h1 "*pulls MC closer to the side of the road since there's a car heading their way"
 
     scene jalan kosong1
-
+    show asprak_smile_1 at right
     h1 "*spins MC around and tells him to walk correctly"
 
     scene jalan motor2
-
+    show asprak_smile_1 at right
     h1 "Dummy, look where you're going when you walk."
 
-    you "Oh shit." # *looks at the car that just passed
+    you "Oh shit."
+    you "*looks at the car that just passed"
     you "Thanks."
 
     "*The campus is just a couple hundred meters ahead"
 
     you "So uhh, you're having a morning class, too?"
+
+    hide asprak_smile_1
+    show asprak_senpai_blush at right
     "*FL1 doesn't answer"
 
     you "By the way, I really didn't expect us to live in the same dorm."
@@ -336,7 +396,9 @@ label start:
 
     scene kelas1
 
+    show asprak_senpai
     you "*reminisces about FL1 back at the lab"
+    hide asprak_senpai
     you "*reminisces about the incident yesterday"
     you "\[She's damn cute, I get that. But I didn't expect that big of a gap moe.\]"
     you "*reminiscing how flustered she got when they walk together"
@@ -355,6 +417,7 @@ label start:
     you "*bumps into his friend"
     you "Oh hey, getting some chow, too?"
 
+    show friend_1 at right
     friend "Hey! Yeah. Didn't understand anything at class, my brain was too busy asking whether I should buy ayam geprek or ayam penyet for lunch."
 
     you "Damn, same. By the way, got any seats yet?"
@@ -392,11 +455,15 @@ label start:
 
     you "Hey! Is this seat taken?"
 
+    show asprak_surprised at right
     h1 "shocked pikachu face, shakes her head"
 
     you "Mind if I sit here?"
 
+    hide asprak_surprised
+    show asprak_senpai at right #mungkin ada ekspresi lain
     h1 "*shakes her head, getting a bit tense"
+    hide asprak_senpai
 
     you "*sits and starts to eat his meal"
     "*they both eat in silence, not daring to break the ice"
@@ -406,13 +473,16 @@ label start:
     you "*finishing his lunch, he looks up to see FL1 staring at him"
     you "I-I think I ought to change tables."
 
+    show asprak_senpai_blush at right
     h1 "No, don't." #*holding the hem of his sleeve
 
     you "*sits back down"
     you "Okay?"
+    hide asprak_senpai_blush
 
     "*MC continues to eat his lunch in silence"
 
+    show asprak_senpai_blush at right
     h1 "Why do you keep approaching me?"
 
     you "I beg your pardon?" #*a bit shocked
@@ -423,6 +493,8 @@ label start:
     you "I mean, we live in the same dorm, we will bump into each other every day. Might as well get to know you better."
     you "\[And for the last part, I really want to know you better.\]"
 
+    hide asprak_senpai_blush
+    show asprak_senpai at right
     h1 "Oh, well that's nice."
 
     you "And we will meet each other every other week at the lab, so-"
@@ -440,6 +512,7 @@ label start:
     you "Y-yeah. Me, too."
 
     h1 "Well, I have to tutor a freshman calculus class in half an hour. It's good to see you, take care." 
+    hide asprak_senpai
     h1 "*leaves"
 
     scene kantin ramai2
@@ -458,19 +531,24 @@ label start:
 
     you "*wakes up startled"
     you "\[How come has the alarm not gone berserk yet? My sleep quality is getting a bit too suspicious.\]"
-
     #Hey, you. You're finally awake. *some 4th wall skyrim shit ?
 
     # you "\[Who the fuck is that?\]"
-
+    show pegang_hp with moveinbottom
     you "*looks at phone for time"
     you "\[There's no way it's still 5 am. That was the best sleep I had in weeks. It must be 5 pm.\]"
+    show pegang_hp with moveoutbottom
 
     you "*looks out his windows. The sky is still dark"
     you "\[Well I'll be damned.\]"
 
+    show pegang_hp with moveinbottom
     you "*turns off alarms"
+    show pegang_hp with moveoutbottom
+
+    show asprak_senpai
     you "*reminisces on yesterday's encounter with senpai"
+    hide asprak_senpai
     you "\[Welp, better get ready and find her again.\]"
 
     "*time skip to lunch"
@@ -480,11 +558,12 @@ label start:
     you "*orders his food and looks around the cafeteria"
     you "\[Where is she?\]"
 
+    show friend_1
     friend "Yo! Wanna join us?"
     you "\[Meh, I'll look for her at the lab after class.\]"
 
     you "Sure thing!"
-
+    hide friend_1
     "*time skip to the afternoon, he went straight to the physics lab building and wait outside"
 
     scene lab datang
@@ -518,7 +597,11 @@ label start:
     you "\[Time to shoot my shot\]"
     you "Fancy seeing you here."
 
+    show asprak_surprised at right
     h1 "*kinda startled"
+
+    hide asprak_surprised
+    show asprak_senpai at right
     h1 "Hey, didn't see you there."
 
     you "*sits down"
@@ -534,23 +617,28 @@ label start:
     h1 "Ah, thank you."
 
     you "*turns the TV on"
+    hide asprak_senpai
 
     "*they both sat and enjoy the sweet delicacy in silence"
 
     you "\[Gotta break the ice.\]"
     you "So, uhhh, what're you doing?"
 
+    show asprak_senpai at right
     h1 "Oh, nothing. Just chilling and hunting for new mangas."
 
     you "\[Oh yeah, she's a closet weeb.\]"
 
-    "Oh really? You really didn't look like someone who would indulge herself in reading man-"
+    you "Oh really? You really didn't look like someone who would indulge herself in reading man-"
 
+    show asprak_disgust at right
     h1 "*throws a pillow at MC"
     h1 "Shut."
 
     you "Ow."
 
+    hide asprak_disgust
+    show asprak_senpai at right
     h1 "Anyway, got any recommendations?"
 
     you "Meh, I don't know. Do you have any genre preferences in mind?"
@@ -659,6 +747,7 @@ label start:
 
     h1 "Bet. Thank youuuuuu." 
     h1 "*runs off"
+    hide asprak_senpai
 
     you "\[She got the edge pieces.\]"
     you "\[Well, as long as she's happy, I don't care.\]" 
@@ -684,17 +773,22 @@ label start:
     you "*arrives at the lab entrance"
     you "*takes his nametag off and presents it to the air"
 
+    show ag at right
     ag "Uhh, hey. I'm right here."
 
     you "*got up from his trance and walked to the scanner"
     you "Oh, yeah. Sorry."
+    hide ag 
+
     you "*enters the lab and goes to his desk"
 
+    show asprak_senpai at right
     h1 "*notices"
     h1 "Huh?, a word?" 
 
     you "Yeah?"
-        
+
+    #mungkin ada ekspresi lain mungkin khawatir    
     h1 "Are you okay? To be honest, you look like shit."
 
     you "Never been better."
@@ -708,7 +802,7 @@ label start:
 
     you "*nods"
 
-    h1 "Gosh, take care of yourself. You know you can just come over to my room if you got  any problems."
+    h1 "Gosh, take care of yourself. You know you can just come over to my room if you got any problems."
     h1 "You know what? Take the day off. I'll go to the practice head and ask him to put put you in the reserve session."
 
     you "Nah, I'm good."
@@ -722,8 +816,11 @@ label start:
     you "O-Okay"
 
     h1 "Good."
+    hide asprak_senpai
 
+    show asprak_surprised at right
     "*Suddenly, he faints on his way to the desk"
+    hide asprak_surprised
 
     "*After some time, he wakes up in the infirmary"
 
@@ -731,6 +828,7 @@ label start:
     you "Where am I?"
     you "\[Whatever this place is, it sure has some top notch pillow.\]"
 
+    show asprak_senpai at right #mungkin ada ekspresi lain
     h1 "Hey, are you awake?"
 
     you "*his eyes shot open"
@@ -764,7 +862,8 @@ label start:
     h1 "*stands up, MC fell on his head"
 
     you "Ow."
-
+    hide asprak_senpai
+    show asprak_senpai_blush at right
     h1 "J-Just take the day off and take care of yourself!"
 
     you "*sat back up"
@@ -778,7 +877,11 @@ label start:
     "*time skip to the next day"
 
     you "*sits inside his room, he's free on Fridays"
+
+    show asprak_senpai
     you "*reminiscing the lap pillow and headpats"
+    hide asprak_senpai
+
     you "\[GAHD DAMN.\]"
     you "\[I NEED IT MORE.\]"
     you "\[I FUCKING NEED MORE LAP PILLOWS.\]"
@@ -787,6 +890,8 @@ label start:
     you "*decides to take a shower"
     you "*gets dressed and gets out of his room"
     you "*opens his door"
+
+    show asprak_senpai at right
     you "*FL1 stands right in front of it"
 
     you "Oh shit."
@@ -802,7 +907,8 @@ label start:
     h1 "Are you sure, though?"
 
     you "No, really. I'm fine now. I just woke up early."
-
+    
+    #mungkin ada ekspresi lain
     h1 "Thank God you're okay."
     h1 "By the way, I'm really sorry for, well-"
 
@@ -820,6 +926,9 @@ label start:
     h1 "Are you serious?"
 
     you "Of course I am."
+    
+    hide asprak_senpai
+    show asprak_senpai_blush at right
 
     h1 "L-Let me check my schedule first."
         
@@ -829,10 +938,13 @@ label start:
 
     h1 "O-Okay."
 
+    hide asprak_senpai_blush
+
     "*time skip to the afternoon"
 
     you "*got out of his room at 4 and finds FL1 already waiting at the dorm's lounge"
 
+    show asprak_senpai at right
     h1 "So, shall we?"
 
     you "Yeah, let's go."
@@ -852,8 +964,11 @@ label start:
     you "Alright."
     you "Two tickets for Miracle in Cell No. 7, please."
 
+    hide asprak_senpai
+
     "*time skip"
 
+    show asprak_cry at right
     you "I *sniffle* I can't believe the world is so unfair."
 
     h1 "*literally crying a river"
@@ -861,12 +976,17 @@ label start:
     
     you "Uhhmmm."
     you "Oh yeah, I forgot I have an assignment due tomorrow, but whatever."
+    
+    hide asprak_cry
+    show asprak_senpai at right
 
     h1 "You should know better not to procrastinate, lest you faint again."
 
     you "But I'm going on a date with my cute lab assistant. I can't let the occasion go, can I?"
     you "*blushes, realizes what he just said"
 
+    hide asprak_senpai
+    show asprak_senpai_blush at right
     h1 "*blushes too"
 
     "*awkward silence"
@@ -875,8 +995,10 @@ label start:
 
     h1 "Y-Yes, please!"
 
+    hide asprak_senpai_blush
     "*time skip, they arrive at their dorm"
-            
+    
+    show asprak_senpai at right
     h1 "Hey btw. Thank you so, so much for the, uuuhmmm, outing."
 
     you "Don't mention it. We need to have some fun once in a while, don't we?"
@@ -892,12 +1014,16 @@ label start:
     h1 "*giggles"
     h1 "*leans in to MC and hugs him"
     h1 "Thank you."
-
+    
+    hide asprak_senpai
     you "\[She hugs me. SHE IS HUGGING ME.\]"
 
+    show asprak_senpai_blush at right
     h1 "So, uhhh."
     h1 "Bye, have a good night!"
     h1 "*runs to her room in embarrassment"
+    
+    hide asprak_senpai_blush
 
     you "*still can't comprehend what just happened"
     you "\[I'm not washing my clothes.\]"
@@ -907,6 +1033,7 @@ label start:
     you "*has got his food and is looking for a seat"
     you "*sees the spot in front of FL1 is empty"
 
+    show asprak_senpai at right
     h1 "*sees him and waves"
 
     you "*scoots there"
@@ -924,6 +1051,7 @@ label start:
 
     you "Online class, the lecturer's sick, so I'm going to-"
 
+    show friend_2 at left
     friend2 "Hey, girl. How've you been?"
 
     h1 "*caught off guard"
@@ -931,13 +1059,15 @@ label start:
 
     friend2 "Oh look who we have here?"
     friend2 "Did you get yourself a boyfriend?"
-
+    hide asprak senpai
+    show asprak_senpai_blush at left
     you "*his brain short circuited"
     you "\[Boyfriend?\]"
     you "\[Am I in a relationship with her?\]"
     you "\[Well, of course I am, but is it that kind of relationship?\]"
     you "\[How the fuck am I supposed to answer them?\]"
-
+    hide asprak_senpai_blush
+    show asprak_senpai at left
     h1 "Come on, give him some slack."
 
     you "*moves aside"
@@ -953,18 +1083,25 @@ label start:
 
     friend2 "Oh shit, pop quiz, gotta go. See you later!"
 
+    hide friend_2
+
     h1 "See ya, take care."
 
+    hide asprak_senpai
     "*FL1 and MC continue to eat in silence"
 
     you "Uhh, senpai?"
 
+    show asprak_senpai at right
     h1 "Yeah?"
 
     you "Did I hear it wrong or did you not answer your friends' question?"
     you "I mean, I know they're just joking and all, but-"
 
+    hide asprak_senpai
+    show asprak_senpai_blush at right
     h1 "Shut. Just eat your damn meal."
+    hide asprak_senpai_blush
 
     you "\[T-This can't be.\]"
     you "\[God, I love her.\]"
@@ -980,6 +1117,7 @@ label start:
     "*whips out his phone"
     "*calls FL1"
 
+    show asprak_senpai at right
     h1 "Moshi-moshi."
 
     you "Hey, how's it going? You good?"
@@ -1076,7 +1214,9 @@ label start:
 
     you "Uhhh."
 
+    show waitress1 at left
     waitress "Order number 66."
+    hide waitress1
 
     h1 "Hey, that's ours."
     h1 "*takes the order"
@@ -1142,9 +1282,10 @@ label start:
     you "*nods"
 
     h1 "Here's my answer, and I hope you do, too."
-
+    hide asprak_senpai
+    show asprak_senpai_blush
     "*leans in and kisses him"
-
+    hide asprak_senpai_blush
     # "*time skip, they're in a relationship"
 
     # you "*wakes up in the lounge's sofa on an early morning on Saturday"
