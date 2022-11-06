@@ -659,8 +659,8 @@ label start:
     h1 "*runs off"
 
     you "\[She got the edge pieces.\]"
-        "\[Well, as long as she's happy, I don't care.\]" 
-        "\[It's just a glorified pancake, nothing big.\]" 
+    you "\[Well, as long as she's happy, I don't care.\]" 
+    you "\[It's just a glorified pancake, nothing big.\]" 
 
     "*time skip to praktikum 2. MC's having an all-nighter trying to speedrun TP Fisika. Sadly, his WD-40 lubed brain is having a pretty hard time"
 
@@ -922,12 +922,12 @@ label start:
 
     you "Online class, the lecturer's sick, so I'm going to-"
 
-    friend2	 "Hey, girl. How've you been?"
+    friend2 "Hey, girl. How've you been?"
 
     h1 "*caught off guard"
     h1 "Oh, hey there, I'm go-"
 
-    friend2	"Oh look who we have here?"
+    friend2 "Oh look who we have here?"
     friend2 "Did you get yourself a boyfriend?"
 
     you "*his brain short circuited"
@@ -949,7 +949,7 @@ label start:
     you "\[Nah, I'm thinking too far off.\]"
     you "\[Or maybe?\]"
 
-    friend2	"Oh shit, pop quiz, gotta go. See you later!"
+    friend2 "Oh shit, pop quiz, gotta go. See you later!"
 
     h1 "See ya, take care."
 
@@ -1131,7 +1131,7 @@ label start:
 
     h1 "Well, just normal stuff, I guess. It sure feels nice to have someone you can rely to, and be someone he can rely on, too."
 
-    you "\[Yep, that's 100% me.\]"
+    you "\[Yep, that's 100\% me.\]"
     you "Tell me."
     you "Do you love him?"
 
@@ -1143,23 +1143,23 @@ label start:
 
     "*leans in and kisses him"
 
-    "*time skip, they're in a relationship"
+    # "*time skip, they're in a relationship"
 
-    you "*wakes up in the lounge's sofa on an early morning on Saturday"
-    you "\[Where the fuck am I?\]"
-    you "*looks around, sees that the TV is on and playing Netflix\]"
-    you "\[Ah, I overslept.\]"
-    you "\[Where is my phone.\]"
+    # you "*wakes up in the lounge's sofa on an early morning on Saturday"
+    # you "\[Where the fuck am I?\]"
+    # you "*looks around, sees that the TV is on and playing Netflix\]"
+    # you "\[Ah, I overslept.\]"
+    # you "\[Where is my phone.\]"
 
-    you "\[There it is.\]"
-    you "*checks the time, its 3 am"
-    "*looks around, the lounge looks like a damn landfill from all the wrappings and snack
-    packagings"
+    # you "\[There it is.\]"
+    # you "*checks the time, its 3 am"
+    # "*looks around, the lounge looks like a damn landfill from all the wrappings and snack
+    # packagings"
 
-    you "\[Better clean them up ASAP before I got scolded.\]"
-    you "*tried to stand up, but can't"
-    you "*realized his right arm fell asleep"
+    # you "\[Better clean them up ASAP before I got scolded.\]"
+    # you "*tried to stand up, but can't"
+    # you "*realized his right arm fell asleep"
 
-    you "*lifts the blanket, only to see FL1 cuddling against him, her arms wrapped around his torso"
+    # you "*lifts the blanket, only to see FL1 cuddling against him, her arms wrapped around his torso"
 
     return

@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/editing.rpy", line 59: Tab characters are not allowed in Ren'Py scripts.
+File "game/script.rpy", line 662: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    "\[Well, as long as she's happy, I don't care.\]" 
+    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun Nov  6 13:31:55 2022
+Sun Nov  6 13:45:52 2022
