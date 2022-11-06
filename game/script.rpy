@@ -19,12 +19,17 @@ image asprak_senpai = "characters/Asprak_Labcoat_Smile.png"
 image asprak_smile_1 = "characters/Asprak_Labcoat_Smile1.png"
 image asprak_surprised ="characters/Asprak_Labcoat_Suprised.png"
 image asprak_wink = "characters/Asprak_Labcoat_Wink.png"
+# image asprak_senpai_blush
+# image asprak_senpai_cry
+# image asprak_nutup_mata
+
 image asprak_disgust = "characters/Asprak_Labcoat_Disgust.png"
 image tangan hp = "characters/pegang_hp.png"
 # image friend_1
 # image ag
 # image friend_2
 # image waitress1 
+
 
 # background
 
@@ -388,7 +393,7 @@ label start:
     you "So uhh, you're having a morning class, too?"
 
     hide asprak_smile_1
-    show asprak_senpai_blush at right
+    show asprak_senpai at right # show asprak_senpai_blush at right
     "*FL1 doesn't answer"
 
     you "By the way, I really didn't expect us to live in the same dorm."
@@ -473,16 +478,16 @@ label start:
     you "*finishing his lunch, he looks up to see FL1 staring at him"
     you "I-I think I ought to change tables."
 
-    show asprak_senpai_blush at right
+    show asprak_senpai at right # show asprak_senpai_blush at right
     h1 "No, don't." #*holding the hem of his sleeve
 
     you "*sits back down"
     you "Okay?"
-    hide asprak_senpai_blush
+    # hide asprak_senpai_blush
 
     "*MC continues to eat his lunch in silence"
 
-    show asprak_senpai_blush at right
+    # show asprak_senpai_blush at right
     h1 "Why do you keep approaching me?"
 
     you "I beg your pardon?" #*a bit shocked
@@ -493,8 +498,8 @@ label start:
     you "I mean, we live in the same dorm, we will bump into each other every day. Might as well get to know you better."
     you "\[And for the last part, I really want to know you better.\]"
 
-    hide asprak_senpai_blush
-    show asprak_senpai at right
+    # hide asprak_senpai_blush
+    # show asprak_senpai at right
     h1 "Oh, well that's nice."
 
     you "And we will meet each other every other week at the lab, so-"
@@ -862,14 +867,15 @@ label start:
     h1 "*stands up, MC fell on his head"
 
     you "Ow."
-    hide asprak_senpai
-    show asprak_senpai_blush at right
+    # hide asprak_senpai
+    # show asprak_senpai_blush at right
     h1 "J-Just take the day off and take care of yourself!"
 
     you "*sat back up"
     you "Hey, wait!"
 
     h1 "Just go back home! I'll take care of the reserve session. (runs, leaving the MC)"
+    hide asprak_senpai # hide asprak_senpai_blush
 
     you "*stands up, dumbfounded"
     you "Damn. That felt good."
@@ -927,8 +933,8 @@ label start:
 
     you "Of course I am."
     
-    hide asprak_senpai
-    show asprak_senpai_blush at right
+    # hide asprak_senpai
+    # show asprak_senpai_blush at right
 
     h1 "L-Let me check my schedule first."
         
@@ -938,13 +944,13 @@ label start:
 
     h1 "O-Okay."
 
-    hide asprak_senpai_blush
+    # hide asprak_senpai_blush
 
     "*time skip to the afternoon"
 
     you "*got out of his room at 4 and finds FL1 already waiting at the dorm's lounge"
 
-    show asprak_senpai at right
+    # show asprak_senpai at right
     h1 "So, shall we?"
 
     you "Yeah, let's go."
@@ -968,7 +974,7 @@ label start:
 
     "*time skip"
 
-    show asprak_cry at right
+    show asprak_senpai at right # show asprak_cry at right
     you "I *sniffle* I can't believe the world is so unfair."
 
     h1 "*literally crying a river"
@@ -977,16 +983,16 @@ label start:
     you "Uhhmmm."
     you "Oh yeah, I forgot I have an assignment due tomorrow, but whatever."
     
-    hide asprak_cry
-    show asprak_senpai at right
+    # hide asprak_cry
+    # show asprak_senpai at right
 
     h1 "You should know better not to procrastinate, lest you faint again."
 
     you "But I'm going on a date with my cute lab assistant. I can't let the occasion go, can I?"
     you "*blushes, realizes what he just said"
 
-    hide asprak_senpai
-    show asprak_senpai_blush at right
+    # hide asprak_senpai
+    # show asprak_senpai_blush at right
     h1 "*blushes too"
 
     "*awkward silence"
@@ -995,10 +1001,10 @@ label start:
 
     h1 "Y-Yes, please!"
 
-    hide asprak_senpai_blush
+    # hide asprak_senpai_blush
     "*time skip, they arrive at their dorm"
     
-    show asprak_senpai at right
+    # show asprak_senpai at right
     h1 "Hey btw. Thank you so, so much for the, uuuhmmm, outing."
 
     you "Don't mention it. We need to have some fun once in a while, don't we?"
@@ -1015,15 +1021,15 @@ label start:
     h1 "*leans in to MC and hugs him"
     h1 "Thank you."
     
-    hide asprak_senpai
+    # hide asprak_senpai
     you "\[She hugs me. SHE IS HUGGING ME.\]"
 
-    show asprak_senpai_blush at right
+    # show asprak_senpai_blush at right
     h1 "So, uhhh."
     h1 "Bye, have a good night!"
     h1 "*runs to her room in embarrassment"
     
-    hide asprak_senpai_blush
+    # hide asprak_senpai_blush
 
     you "*still can't comprehend what just happened"
     you "\[I'm not washing my clothes.\]"
@@ -1059,15 +1065,15 @@ label start:
 
     friend2 "Oh look who we have here?"
     friend2 "Did you get yourself a boyfriend?"
-    hide asprak senpai
-    show asprak_senpai_blush at left
+    # hide asprak senpai
+    # show asprak_senpai_blush at left
     you "*his brain short circuited"
     you "\[Boyfriend?\]"
     you "\[Am I in a relationship with her?\]"
     you "\[Well, of course I am, but is it that kind of relationship?\]"
     you "\[How the fuck am I supposed to answer them?\]"
-    hide asprak_senpai_blush
-    show asprak_senpai at left
+    # hide asprak_senpai_blush
+    #show asprak_senpai at left
     h1 "Come on, give him some slack."
 
     you "*moves aside"
@@ -1098,10 +1104,10 @@ label start:
     you "Did I hear it wrong or did you not answer your friends' question?"
     you "I mean, I know they're just joking and all, but-"
 
-    hide asprak_senpai
-    show asprak_senpai_blush at right
+    # hide asprak_senpai
+    # show asprak_senpai_blush at right
     h1 "Shut. Just eat your damn meal."
-    hide asprak_senpai_blush
+    hide asprak_senpai # hide asprak_senpai # hide asprak_senpai_blush
 
     you "\[T-This can't be.\]"
     you "\[God, I love her.\]"
@@ -1283,9 +1289,11 @@ label start:
 
     h1 "Here's my answer, and I hope you do, too."
     hide asprak_senpai
-    show asprak_senpai_blush
+    show asprak_senpai #show asprak_senpai_blush #mungkin ada ekspresi lain
     "*leans in and kisses him"
-    hide asprak_senpai_blush
+    hide asprak_senpai # hide asprak_senpai_blush
+    
+    
     # "*time skip, they're in a relationship"
 
     # you "*wakes up in the lounge's sofa on an early morning on Saturday"
