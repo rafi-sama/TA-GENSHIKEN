@@ -540,4 +540,4 @@ you *wakes up in the lounge's sofa on an early as fuck Saturday
                           *realized his right arm fell asleep
                           "\[The fuck?\]"
                           *lifts the blanket, only to see FL1 cuddling against him, her arms wrapped around his torso
-                          *is beet red
+                          *is beet reddd
