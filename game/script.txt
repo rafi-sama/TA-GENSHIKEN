@@ -325,7 +325,7 @@ MC		: “Hey, come back here! I’m not done yet!”
 
 MC’s Friend	: “See ya later!”
 
-21 ===[NOT DONE]=================================================================================================== 
+21 ===[DONE]=================================================================================================== 
 
 (kantin / meja)
 
@@ -424,5 +424,782 @@ MC		: [Meh, I’ll look for her at the lab after class.]
 		*time skip to the afternoon, he went straight to the physics lab building and wait
 		outside
 		[Guess she’s not here. Well, nice try, I guess.]
-		*MC heads back to his dorm
 
+22 ===[NOT DONE]=================================================================================================== 
+
+	(kosan/kamar)
+
+	*MC heads back to his dorm
+
+		*stomach rumbles
+		[I literally just ate four hours ago.]
+		*rumbles some more
+		[Now, should I order a balanced meal like a responsible college student should or
+		should I order diabetes incarnate?] *spoiler alert, his intrusive thought wins
+		[A wise person once said an apple a day keeps the doctor away. Unfortunately, I’m
+		not a wise guy.]
+
+
+		*orders a martabak manis/terang bulan/hok lo pan/kue bandung/apam balik/whatever the
+		fuck you call it
+
+	(ambil gofood?)
+	
+		*his order arrives. He takes it and went to the lounge
+		*sees FL1 on her phone
+		[Time to shoot my shot]
+		“Fancy seeing you here.”
+
+FL1		: *kinda startled
+		“Hey, didn’t see you there.”
+
+MC		: *sits down
+		“Do you mind?” *point to the sofa
+
+FL1		: *pats the cushion
+		“C’mere.”
+
+MC		: “Nice.”
+		*opens the martabak
+		“Here, take some.”
+
+FL1		: “Ah, thank you.”
+
+MC		: *turns the TV on
+		*they both sat and enjoy the sweet delicacy in silence
+		[Gotta break the ice.]
+		“So, uhhh, what’re you doing?”
+
+FL1		: “Oh, nothing. Just chilling and hunting for new mangas.”
+
+MC		: [Oh yeah, she’s a closet weeb.]
+		“Oh really? You really didn’t look like someone who would indulge herself in
+		reading man-”
+
+FL1		: *throws a pillow at MC
+		“Shut.”
+
+MC		: “Ow.”
+
+FL1		: “Anyway, got any recommendations?”
+
+MC		: “Meh, I don’t know. Do you have any genre preferences in mind?”
+
+FL1		: “Anything with a lot of actions, especially the ones with some fantasy or magic or
+		whatever you call it.”
+
+MC		: “Are isekais okay?”
+
+FL1		: “Preferably not, too cliche.”
+
+MC		: “Well shit. Fate?”
+
+FL1		: “I have watched, played, and read the franchise to oblivion.”
+
+MC		: *kinda shocked pikachu face
+		[H-hol up. Played? S-she couldn’t have played the OG VN right?]”
+
+FL1		: “Hey, are you okay? You look pretty shocked knowing I watch Fate.”
+
+MC		: “N-nothing. It’s just that I rarely find someone that watches fate, too. By
+		the way, which one is your favorite?”
+
+FL1		: “Surprisingly, Today’s Menu for the Emiya Family. I think I got sick of all the misery
+		sometime in the middle of reading Strange Fake.”
+
+MC		: “Very understandable.”
+		“Have you tried Garden of Sinners?”
+
+FL1		: “Huh, didn’t think of that. I’ve watched the anime, but I haven’t really thought
+		of reading the light novels. You know where to get them?”
+
+MC		: “Uhh, maybe try the book store? I’d find a couple hidden gems here and there
+		sometimes.”
+
+FL1		: *smiles
+		“I’ll try.”
+
+MC		: “Though if I were you, I'd just sail the high seas.”
+
+FL1		: “Ah, a fellow corsair.”
+
+MC		: *laughs
+		“By the way, do you really love Fate that much?”
+
+FL1		: “Well, yes, at least when it comes to franchises. Shit slaps. I mean, where else can
+		you find King Arthur portrayed as women. Mind the plural form.”
+
+MC		: “Shiiiiieeet. Coming to it, I’m quite surprised that FGO or Type-Moon has yet to
+		make a Monty Python reference.”
+
+FL1		: “Yeah, I really expected Artoria to ask something about swallows at least once.”
+
+MC		: “By the way, have you tried Tsukihime?”
+
+FL1		: “I have. As a matter of fact, I just finished the new one last week. Both routes.”
+
+MC		: “Damn.”
+
+FL1		: “You got any anime or manga of your liking?”
+
+MC		: “Do you know Ghost in the Shell?”
+
+FL1		: “The anime, right? Not the live action.”
+
+MC		: “Of fucking course, making a live action version of Ghost in the Shell was a
+		mistake.”
+
+FL1		: “I think that applies to a lot of anime.”
+
+MC		: “Anyway, there was this pretty old series called the Stand Alone Complex, made
+		in the early 2000’s or something. The first season was okay, but the second season
+		was out of this world.”
+
+FL1		: “Oh, does it have a great plot or something?”
+
+MC		: “Nah, the overall plot is good, but not that remarkable. However, the mix
+		between the subplots, soundtracks, and actions was something else. I haven’t
+		seen another anime that comes close.
+
+FL1		: “Action, you said?”
+
+MC		: “Well, yeah. It’s literally a cyberpunk police anime.”
+
+FL1		: “I think I should give it a chance. I’ve watched the new one in Netflix, it was
+		Okay, I think?”
+But if it’s about my actual favorite
+		it’s got to be those tearjerkers. You know, like Grave of the Firef-”
+
+MC		: “Please don’t elaborate further, I don’t want to get PTSD at the moment.”
+
+
+23 ===[NOT DONE]=================================================================================================== 
+
+FL1		: “Sheeesh, okay.”
+		“What about 5 cm/s?”
+
+MC		: “Well that’s pretty nice, but still, two literal idiots in love. Can’t handle watching
+		that for the second time.”
+
+FL1		: “Ditto, by the way-”
+		*interrupted by her phone vibrating
+		“Oh shit, I forgot I have a group work due tomorrow. Fuck, they’re asking for my
+		progress.”
+
+MC		: “Well? Get going already.”
+
+FL1		: “Okay, okay, I’m going to my room.”
+		“By the way, can I take another bite?”
+
+MC		: *sighs
+		“Just take the damn box, there’s like, what, four pieces left?”
+
+FL1		: “You sure?”
+
+MC		: “Yeah, I’m full anyway.”
+
+FL1		: “Bet. Thank youuuuuu.” *runs off
+
+MC		: [She got the edge pieces.]
+		[Well fuck it, as long as she’s happy, I don’t care.] *fuckin simp
+		[It’s just a glorified pancake, nothing big.] *cope harder
+
+*time skip to praktikum 2. MC’s having an all-nighter trying to speedrun TP Fisika. Sadly, his WD-40 lubed brain is having a pretty hard time
+
+MC		: [GOTTA FINISH THE FLOWCHARTS.}
+		*checks his phone, his friend that had done his module the week before sends the
+		procedure to derive an equation or something
+		*he got a step wrong
+		“FUCKING PIECE OF SHIT PHYSICS PRELIMINARY.”
+		“DERIVE THIS, DERIVE THAT, HOW ABOUT YOU FUCKERS DERIVATE
+		SOME BITCHES.”
+		*sits down, trying to calm himself
+		*chugs coffee that is more of a motor oil than coffee
+		[Aight. Calm down, calm down, calm DOWN, CALM THE FUCK DOWN.]
+		*threw his pen so hard it fucking broke
+		[Aight, fuck this shit.] *proceeds to draw the ugliest, pure undecipherable flowchart
+		*his 6 am alarm goes off
+		[Great, no fucking sleep.]
+
+*time skip to the actual praktikum
+
+MC		: *arrives at the lab entrance
+		*takes his nametag off and presents it to the air
+
+Attendance Guy	: “Uhh, hey. I’m right here.”
+
+MC		: *got up from his trance and walked to the scanner
+		“Oh, yeah. Sorry.”
+		[Great, now the migraine got worse.]
+		[I think having another mug of coffee and ibuprofen for breakfast is not a good
+		idea.]
+		*enters the lab and goes to his desk
+
+FL1		: *notices him, insert worried onee-san face
+		“(MC), a word?” *stern asprak voice, calling him to the side
+
+MC		: “Yeah?”
+		*stumbles on his way
+
+FL1		: “Are you okay? To be honest, you look like shit.”
+
+MC		: “Never been better.”
+
+FL1		: “Did you have any sleep last night?”
+
+MC		: “If you count a bunch of two second microsleeps as sleep, then yes.”
+
+FL1		: *sighs
+		“You know you have a lab session tomorrow, yet you still force yourself out. Was it
+		the preliminaries?”
+
+MC		: *nods
+
+FL1		: “Gosh, take care of yourself. You know you can just come over to my room if you
+		got  any problems.”
+		“You know what? Take the day off. I’ll go to the practice head and ask him to put
+		put you in the reserve session.”
+
+MC		: “Nah, I’m good.”
+
+FL1		: “Come on, there won’t be any score discount if you’re on sick leave.”
+
+MC		: “No, really, I’m okay. You’re such a worrywart.”
+
+FL1		: “Fine. But tell me if you feel sick or anything, okay?” *strokes his hair
+
+MC		: *got a bit startled
+		“O-Okay”
+
+FL1		: “Good.”
+
+*Suddenly, our dumbfuck of an MC faints on his way to the desk
+
+FL1		: “(MC)!”
+
+*After some time, he wakes up in the infirmary
+
+MC		: *slowly opens his eyes
+		“Where the fuck am I?” *mumbles
+		[Whatever this place is, it sure has some top notch pillow.]
+
+FL1		: “Hey, are you awake?”
+
+MC		: *his eyes shot open
+		*he’s in FL1’s lap, her hands stroking his head
+		*they stare at each other
+		“Uhh, yeah?”
+
+FL1		: “You big dummy, why didn’t you tell me you’re sick?”
+		“Do you know how worried I was?”
+
+MC		: *just nods his head, still can’t believe he’s in her lap while getting caressed
+
+FL1		: “I mean, let’s forget about you for once. Do you have any idea how dangerous it
+		is to work half-awake IN A LABORATORY?”
+		“Do you even realize that you are a safety hazard at that moment?”
+
+MC		:  *nods and blushes
+
+FL1		: “I mean, gosh, if you don’t feel well, just say it. I don’t want you to get hurt.”
+
+MC		: *silent
+
+FL1		: “Hey, are you even listening?”
+
+MC		: “Yes.” *clearly not listening
+
+FL1		: *realizes that she’s still stroking his hair while scolding him
+		*blushes too and stops stroking
+
+MC		: “Hey, why did you-”
+
+FL1		: *stands up, MC fell on his head
+
+MC		: “Ow.”
+
+FL1		: “J-Just take the day off and take care of yourself!”
+
+MC		: *sat back up
+		“Hey, wait!”
+
+FL1		: “Just go back home! I’ll take care of the reserve session.” *runs, leaving the MC
+
+MC		: *stands up, dumbfounded
+		“Damn.”
+		“That felt good.”
+
+*time skip to the next day
+
+MC		: *sits inside his room, he’s free on Fridays
+		*reminiscing the lap pillow and headpats
+		[GAHD DAMN.]
+		[I NEED IT MORE.]
+		[I FUCKING NEED MORE LAP PILLOWS.]
+		*slaps himself
+		“Control yourself, (MC).”
+		*decides to take a shower
+		*gets dressed and gets out of his room
+		*opens his door
+		*FL1 stands right in front of it
+
+MC		: “Oh shit.”
+
+FL1		: *blushes
+		“G-Good morning, (MC).”
+
+MC		: “Uhh, good morning?”
+
+FL1		: “How have you been? Are you okay?”
+		*touches his forehead
+
+MC		: *nearly crashed, jarang dibelai moment
+		“Oh, I’m okay.”
+
+FL1		: *still looks concerned
+		*”Are you sure, though?”
+
+MC		: “No, really. I’m fine now. I just woke up early.”
+
+FL1		: *breathes out
+		“Thank God you’re okay.”
+		“By the way, I’m really sorry for, well-”
+
+MC		: “Nah, it’s fine. I mean, It’s not like I can see you blush that red everyday .”
+		*expects some scolding
+
+FL1		: *blushes even harder
+
+MC		: *startled, doesn’t know what to do
+
+*they both just stand in silence
+
+MC		: [I’m free today.]
+		[No homework or the ilk either.]
+		[Might as well.]
+		“Hey,  are you free this afternoon?”
+
+FL1		: :”What?”
+
+MC		: “I got a promo for two free movie tickets. I mean, if you’re free, we can go to the
+		cinema.”
+
+FL1		: *blushes
+		“Are you serious?”
+
+MC		: “Of course I am.”
+
+FL1		: “L-Let me check my schedule first.”
+		*checks her phone
+		“Well I don’t have anything of importance ro do past 4 am. Is it too late?”
+
+MC		: “No, no, it’s perfect. So, see you at 4 or 5?”
+
+FL1		: “O-Okay.” *blushes red as fuck
+
+*time skip to the afternoon
+
+MC		: *got out of his room at 4 and finds FL1 already waiting at the dorm’s lounge
+		*shocked seeing how gorgeous MC is
+		*just standing there
+
+FL1		: *sees MC
+		“You okay there? You look like you just saw a ghost.”
+
+MC:		: “Oh, oh, yeah. I’m fine.”
+
+FL1		: “So, shall we?”
+
+MC		: “Yeah, let’s go.”
+
+*they walked to an alternate version of Jatos
+MC		: *looking at the movie schedule
+		“You got anything in mind?”
+
+FL1		: “I thought you already had the tickets.”
+
+MC		: “I have a promo for two free tickets, we can still choose the movie.”
+
+FL1		: “Ah, I see.”
+		“(Insert sad movie name, I don’t know any new ones) it is, then.”
+
+MC		: “Alright.”
+		“Two tickets for (Insert movie), please.”
+
+*time skip
+
+MC		: *bawling his eyes out
+		“I *sniffle* I can’t believe she really left him.”
+
+FL1		: *literally crying a river
+		“That dumb fucking MC. Why didn’t he ask her out!”
+ 
+MC		: “I know, right? I mean, fuck what their family said, they were a perfect couple.”
+
+FL1		: “But really though, the FMC shouldn’t have played with his feelings, too. Gosh, I
+		hate those two dimwits.”
+
+Some other viewer in the distance	: “I’ll go to fucking Korea, find the author, and demand a
+					change of ending!”
+
+MC		: “I will unironically sponsor that guy.”
+
+FL1		: “I really wish my love life wouldn’t be like that.”
+
+MC		: *didn’t expect that remark, is now shocked-pikachu.webm
+		[S-Should I express my feelings right now?]
+
+FL1		: “H-Hey. Hey! Are you okay?”
+
+MC		: “Yeah. I just.”
+		“Uhhmmm.”
+		“Oh yeah, I forgot I have an assignment due tomorrow, but fuck it.”
+
+FL1		: *stern asprak voice
+		“(MC), you should know better not to procrastinate, lest you faint again.”
+
+ MC		: “But I’m going on a date with my cute lab assistant. I can’t let the occasion go, can I?”
+		*blushes, realizes what he just said
+
+FL1		: *blushes too
+
+*awkward silence
+
+MC		: “Do you wanna get a meal?”
+
+FL1		: “Y-Yes, please!”
+
+*time skip, they arrive at their dorm
+*I will work on the deep talk later, can’t really think of a scenario
+		
+MC		: *steps out of the cab
+		“Thanks for the ride, sir.”
+
+FL1		: “Hey, (MC). Thank you so, so much for the, uuuhmmm, outing.”
+
+MC		: “Don’t mention it. We need to have some fun once in a while, don’t we?”
+
+FL1		: “But really, you paid for the whole thing, I don’t-”
+
+MC		: “Shush, just consider it as a pay back for yesterday. Though, I think I have
+		something to ask you.”
+
+FL1		: “What is it?”
+
+MC		: “Reduce the moe gap. I don’t think I can hold my laughter if I see you in your
+		asprak mode next session.”
+
+FL1		: *giggles
+		*leans in to MC and hugs him
+		“Thank you, (MC).”
+
+MC		: *his mind went fucking haywire
+		[She hugs me. SHE IS HUGGING ME.]
+
+FL1		: *finally lets go
+		*is red as fuck
+		“So, uhhh.”
+		“Bye, have a good night!”
+		*runs to her room in embarrassment
+
+MC		: *still can’t comprehend what just happened
+		[I’m not washing my clothes.]
+
+*time skip, a couple days later, at lunch time
+
+MC		: *has got his food and is looking for a seat
+		*sees the spot in front of FL1 is empty
+
+FL1		: *sees him and waves
+
+MC		: *scoots there
+		“Fancy seeing you here.”
+
+FL1		: “Yeah, yeah, we’ve been sitting together at lunch for like, what, two weeks? Just
+		get your ass here if you need a seat.”
+
+MC		: “Damn, no need to be so blunt.”
+
+FL		: “Yeah, whatever.”
+
+MC		: “By the way, you got class after lunch?”
+
+FL1		: “Yes, and then a group assignment. You?”
+
+MC		: “Online class, the lecturer’s sick, so I’m going to-”
+
+FL1’s friend	: “Hey, (FL1). How’ve you been?”
+
+FL1		: *caught off guard
+		“Oh, hey there, I’m go-”
+
+FL1’s friend	: “Oh look who we have here?”
+		“(FL1), did you get yourself a boyfriend?”
+		*her friends giggle and shit
+
+MC		: *his brain short circuited
+		[Boyfriend?]
+		[Am I in a relationship with her?]
+		[Well, of course I am, but is it that kind of relationship?]
+		[How the fuck am I supposed to answer them?]
+
+FL1		: “Come on, give him some slack. (MC), give them some space.”
+MC		: *moves aside
+
+FL1		: “We’re just having lunch. Y’all don’t get some?”
+
+FL1’a friend	: “Oh, we had one already. By the way, did you hear that ….”
+
+MC		: [Hol up. She doesn’t deny it, though.]
+		[Could she?]
+		[Nah, I’m thinking too far off.]
+		[Or maybe?]
+
+FL1’s friend	: “Oh shit, pop quiz, gotta go. See you later (FL1)!”
+
+FL1		: “See ya, take care.”
+
+*FL1 and MC continue to eat in silence
+
+MC		: “Uhh, (FL1)?”
+
+FL1		: “Yeah?”
+
+MC		: “Did I hear it wrong or did you not answer your friends’ question?”
+“I mean, I know they’re just joking and all, but-”
+
+FL1		: *blushes
+		“Shut. Just eat your damn meal.”
+
+MC		: *blushes too
+		[T-This can’t be.]
+		[God, I love her.]
+
+*time skip to Thursday
+
+MC		: *MC just finished Praktikum 2 Pengkom
+		*he couldn’t understand jackshit
+		[What the fuck was that.]
+		[What in the everloving fuck was that shit.]
+		[I’mma go touch some grass.]
+		*he prepares for a walk, but then he remembered something
+		[You know what will make this stroll better?]
+		*whips out his phone
+		*calls FL1
+
+FL1		: “Moshi-moshi.”
+
+MC		: “Hey, how’s it going? You good?”
+
+FL1		: “Yes. Need something?”
+
+MC		: “No, just wondering if you’re free today?”
+
+FL1		: “My brother in harmonia progressio, I’m literally watching SpongeBob at the
+		living room.”
+
+MC		: *opens his door and heads to the lounge
+		*sees FL1 laying on the sofa while munching down an ice cream sandwich
+		“So, you’re free?”
+
+FL1		: *sits
+		“You’re up to something?”
+
+MC		: “I’m going outside, preferably touching some grass while at it. Wanna come?”
+
+FL1		: *still thinking for quite a while for she’s still in airhead mode
+		“Sure. You’re ready to go, right?”
+
+MC		: “Yes.”
+
+FL1		: “Aight, just wait here. Let me change.”
+
+*time skip
+
+FL1		: “Alright. Lead the way!”
+
+MC		: “Bet.”
+
+*they walk outside
+
+FL1		: “So, you know where we’re going?”
+
+MC		: “Good question.”
+		“I have no idea.”
+
+FL1		: *grins
+		“I have somewhere in mind.”
+
+MC		: “Wher-”
+		*got dragged by FL1
+
+FL1		: “Just wait and see.”
+
+*they arrived at a certain ice cream shop
+
+FL1		: “Ta da.”
+
+MC		: “Ice cream?”
+
+FL1		: “Not just ice cream though, there’s smoothie and shit, too. Come on in, my treat.”
+
+MC		: “But I’m the one th-”
+		*got dragged again
+
+FL1		: *looking at the menu
+		“So, what do you want?”
+
+MC		: “Uhh, I want something simple. Prolly a vanilla soft serve and a boba.”
+
+FL1		: “You know they can mix both of them together, right?”
+
+MC		: “Sometimes, mixing similar food is not the best course of action. And I’m in the
+		mood to savor each of them separately. ”
+
+FL1		: “Damn, okay Anton Ego.”
+		*heads to the cashier
+		“Hi, I’d like to order two vanilla soft serves and two brown sugar boba.”
+
+MC		: [She’s in a really high spirit today.]
+
+FL1		: “Alright, we just have to wait for our ice cream now.”
+
+MC		: “Uh huh.”
+
+*silence
+
+FL1		: “So, how’s college?”
+
+MC		: “So far? Not ideal, still got some skill issues with physics and chemistry. But
+		calculus’ not as hard as I thought, though.”
+
+FL1		: “Remember, if you have any trouble, just hit me up.”
+
+MC		: “Yeah, yeah, I still remember your scolding when I was-”
+
+FL1		: “Do. Not. Continue.” *blushes
+
+MC		: “By the way, how’s Garden of Sinners.”
+
+FL1		: “Found pdf’s of some of the series. Pretty damn good, I must say.”
+
+MC		: “I know you’d like it.”
+		*sips on his water bottle
+
+*silence
+
+FL1		: “So.”
+		“Got any girls on your sights, yet?”
+
+MC		: *spits/choked on his water
+		“Wh-What?”
+
+FL1		: *shit eating grin
+		“You heard me, big guy.”
+
+MC		: “What kind of question is that?”
+
+FL1		: “Oh come on, just answer it.”
+
+MC		: *blushes
+		[Fuck.]
+		“W-Well, there’s this one girl.”
+
+FL1		: “Hmmm?”
+
+MC		: “Uhhh.”
+
+Server		: “Order number 66.”
+
+FL1		: “Hey, that’s ours.”
+		*takes the order
+		“Here are yours.”
+
+MC		: “Ah, thanks.”
+
+FL1		: “Wanna go to the park?”
+
+MC		: “S-Sure.”
+
+*they left the store, time skip to park. They got a seat there
+
+FL1		: “You know what? They do taste good when separated.”
+
+MC		: “Right?”
+
+FL1		: “By the way, regarding my question earlier.”
+
+MC		: *sweating bullets
+
+FL1		: “I also have a guy in sight.”
+
+MC		: [Could it be me?]
+
+FL1		: “Truth to be told, I don’t really care about getting into a, you know, relationship.
+		But then, there was this lazy, sorry excuse of a physics student.”
+
+MC		: [She’s talking about me.]
+
+FL1		: “This guy was, ugghhh. You know, I sometimes wonder how he got into ITB.”
+		“He’s pretty cute, not gonna lie. And he also as a tendency to force himself to do
+		something he knows he can’t.”
+
+MC		: “Sounds like someone I know.”
+
+FL1		: *smiles
+		“But due to circumstances, we got closer.”
+		“And closer.”
+		“And closer.”
+		“And the fact he, too, is a weeb doesn’t help.”
+		“But, I think the weeb part seals the deal.”
+		“Then we went on a date together.”
+		“Had some pretty deep talk.”
+		“And I think I fell for him.”
+
+MC		: “Oh, he’s a weeb?”
+
+FL1		: “A big one, that is.”
+
+MC		: “He doesn’t happen to like an old anime, does he?”
+
+FL1		: “If you count a 2004 anime that is now pretty obscure as old, then he does.”
+
+MC		: “Huh. I guess he suits you so much.”
+
+FL1		: “That he does, (MC). That he does.”
+
+MC		: “Is there anything you like more about him?”
+
+FL1		: “Well, just normal stuff, I guess. It sure feels nice to have someone you can rely to,
+		and be someone he can rely on, too.”
+
+MC		: [Yep, that’s 100% me.]
+“Tell me.”
+		“Do you love him?”
+
+FL1		: “Wanna know the answer?”
+
+MC		: *nods
+
+FL1		: “Here’s my answer, (MC), and I hope you do, too.”
+*leans in and kisses him
+
+*time skip, they’re in a relationship
+
+MC		: *wakes up in the lounge’s sofa on an early as fuck Saturday
+		*startled
+		[Where the fuck am I?]
+		*looks around, sees that the TV is on and playing Netflix]
+		[Ah, I overslept.]
+		[Where the fuck is my phone.]
+		*fumbles around
+		[There it is.]
+		*checks the time, its 3 am
+		*looks around, the lounge looks like a damn landfill from all the wrappings and snack
+		packagings
+                          [Better clean them up ASAP before I got scolded.]
+                          *tried to stand up, but can't
+                          *realized his right arm fell asleep
+                          [The fuck?]
+                          *lifts the blanket, only to see FL1 cuddling against him, her arms wrapped around his torso
+                          *is beet red

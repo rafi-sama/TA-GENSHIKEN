@@ -145,7 +145,7 @@ style namebox:
     xsize gui.namebox_width
     ypos gui.name_ypos
     ysize gui.namebox_height
-    xoffset -220
+    xoffset -250
     yoffset -95
 
     background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
