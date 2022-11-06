@@ -546,14 +546,14 @@ label start:
     show pegang_hp with moveinbottom
     you "*looks at phone for time"
     you "\[There's no way it's still 5 am. That was the best sleep I had in weeks. It must be 5 pm.\]"
-    show pegang_hp with moveoutbottom
+    hide pegang_hp with moveoutbottom
 
     you "*looks out his windows. The sky is still dark"
     you "\[Well I'll be damned.\]"
 
     show pegang_hp with moveinbottom
     you "*turns off alarms"
-    show pegang_hp with moveoutbottom
+    hide pegang_hp with moveoutbottom
 
     you "*reminisces on yesterday's encounter with senpai"
 
