@@ -501,7 +501,11 @@ MC		: *kinda shocked pikachu face
 
 FL1		: “Hey, are you okay? You look pretty shocked knowing I watch Fate.”
 
+<<<<<<< HEAD
 MC		: “N-nothing. It’s just that I rarely find someone that watches fate, too. By
+=======
+MC		: “Ah, nothing wrong. It’s just that I rarely find someone that watches fate, too. By
+>>>>>>> 6f700a88f3bc7bb16328a6b46796e78ffc2a495f
 		the way, which one is your favorite?”
 
 FL1		: “Surprisingly, Today’s Menu for the Emiya Family. I think I got sick of all the misery
@@ -540,6 +544,7 @@ FL1		: “I have. As a matter of fact, I just finished the new one last week. Bo
 
 MC		: “Damn.”
 
+<<<<<<< HEAD
 FL1		: “You got any anime or manga of your liking?”
 
 MC		: “Do you know Ghost in the Shell?”
@@ -1203,3 +1208,6 @@ MC		: *wakes up in the lounge’s sofa on an early as fuck Saturday
                           [The fuck?]
                           *lifts the blanket, only to see FL1 cuddling against him, her arms wrapped around his torso
                           *is beet red
+=======
+FL1		: “By the way, got any anime of your liking?”
+>>>>>>> 6f700a88f3bc7bb16328a6b46796e78ffc2a495f
