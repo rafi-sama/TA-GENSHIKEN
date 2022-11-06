@@ -67,6 +67,8 @@ image blink = "blink.png"
 
 # sound
 define audio.alarm = "sound/sfx/alarm.mp3"
+define audio.yawn = "sound/sfx/yawn.mp3"
+define audio.bukujatoh = "sound/sfx/bukujatoh.mp3"
 
 # The game starts here.
 label start:
@@ -75,7 +77,7 @@ label start:
     scene black with Dissolve(4)
 
     # play music "sound/Bar_at_the_port.mp3" loop 
-    # play sound "sound/sfx/yawn.mp3" loop
+    play sound yawn loop
 
     scene kamar bangun_blink with Dissolve(3)
 
@@ -244,7 +246,7 @@ label start:
     you "*while reaching said oreo, he finds a bag of chips in one of the drawers"
     you "\[What kind of psychopath chills their chips?\]"
 
-    "*sound of a book dropped onto the floor"
+    play sound bukujatoh
     you "\[Huh?\]"
 
     scene kos sofa_far
