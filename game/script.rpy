@@ -62,6 +62,13 @@ image kos sofa_close = "scenes/kos_sofa_close.jpg"
 image kos sofa_far = "scenes/kos_sofa_far.jpg"
 image kos sofa_duduk = "scenes/kos_sofa_duduk.jpg"
 image kos luar = "scenes/kos_luar.jpg"
+image kos gerbang = "scenes/kos_gerbang.jpg"
+image kos tiduran = "scenes/kos_tiduran.jpg"
+image kos mejabelajar = "scenes/kos_meja_belajar.jpg"
+image kos datang = "scenes/kos_datang.jpg"
+image kulkas tutup = "scenes/kulkas_tutup.jpg"
+image kulkas buka = "scenes/kulkas_buka.jpg"
+image kulkas oreo = "scenes/kulkas_buka_oreo.jpg"
 image lab barometer = "scenes/lab_barometer.jpg"
 image lab komputer1 = "scenes/lab_komputer1.jpg"
 image lab komputer2 = "scenes/lab_komputer2.jpg"
@@ -82,6 +89,11 @@ image lab timbangan = "scenes/lab_timbangan.jpg"
 image lift buka = "scenes/lift_buka.jpg"
 image lift tutup = "scenes/lift_tutup.jpg"
 image lift pencet = "scenes/lift_pencet.jpg"
+image jatos = "scenes/jatos.jpg"
+image mixue = "scenes/mixue.jpg"
+image xxi = "scenes/xxi.jpg"
+image hbed = "scenes/pov_hbed.jpg"
+
 
 # character 
 # image asprak_senpai = "characters\asprak_senpai.png"
@@ -109,40 +121,42 @@ label start:
 
     stop sound
 
-    you "*wakes up at 06.30 AM on a Monday"
+    # you "*wakes up at 06.30 AM on a Monday"
     
     scene kamar bangun with Dissolve(2)
     
     show tangan hp with moveinbottom
 
-    you "*Checks his phone for time"
-    you "\[Why did I wake up this early? I have no class on Mondays.\]"
+    # you "*Checks his phone for time"
+    you "\[Why did I wake up this early? I have no class on Monday.\]"
+
+    you "\[I think I'm going back to sleep.\]"
 
     hide tangan with moveoutbottom
 
-    scene kamar bangun_blink with Dissolve(1.5)
-    you "*proceeds to close  his eyes, then remembers something"
+    scene kamar bangun_blink with Dissolve(2)
+    # you "*proceeds to close  his eyes, then remembers something"
 
-    scene kamar bangun with Dissolve(1.5)
-    you "\[I have a fucking physics practice session this morning.\]"
+    scene kamar bangun with vpunch
 
-    scene beres2in_barang
+    you "\[WAIT!\]"
+    you "\[I have physics practice session this morning.\]"
 
-    you "*MC prepares his stuffs and double-timed his way to ITB"
+    you "\[OH CRAP, I don't have much time left.\]"
 
     scene gerbang3
 
-    you "*MC looks at his watch as he passed through the gate, 07.00 AM"
+    you "\[I'm totally going to be late.\]"
 
     scene lab pintu_lab
 
-    you "\[Fuck, I'm gonna be late\]"
+    you "\[Hopefully they don't get mad at me.\]"
 
     scene lab ramai1
 
     you "Excuse me!" #*as he pushed his way to the lab
 
-    you "*MC somehow managed to enter the lab just as his group got called by the assistant for briefing"
+    # you "*MC somehow managed to enter the lab just as his group got called by the assistant for briefing"
     
     scene lab komputer1
 
@@ -155,21 +169,17 @@ label start:
 
     show asprak_senpai at left
 
-    h1 "*clears throat"
-
-    show asprak_senpai at right
-
+    h1 "Ehm.. Ehm.."
     h1 "I'll start the briefing, now that your group is complete."
-    h1 "Please note, I'm giving you *looking at MC some leniency just because this is your first session."
+    h1 "Please note, I'm giving you some leniency just because this is your first session."
     h1 "Your next assistant might not be so forgiving."
     h1 "Gather all of your preliminary assignments on the desk before we start the test."
     h1 "Done? Good. Get your pen and papers, here's your test."
-    h1 "*flips the whiteboard"
+ 
+    scene lab papan2 with vpunch
 
-    scene lab papan2
-
-    you "\[What the hell am I looking at?\]"
-    you "\[What in the actual fuck is regression analysis\]"
+    you "\[What am I looking at?\]"
+    you "\[What on earth is a regression analysis?\]"
 
     scene lab meja
 
@@ -178,9 +188,10 @@ label start:
     h1 "Five minutes remaining."
     hide asprak_smile_1
 
+    you "Bro, could you help me out on that regression thing?"
+
     show friend_1 lab at left
 
-    you "Bro, could you help me out on that regression thing?"
     friend "Bro.. you passed 8th grade, right?"
     friend "You literally only have to find the slope of that equation. The. Slope. Of. The. Equation."
     you "How?"
@@ -190,10 +201,11 @@ label start:
     
     show asprak_senpai at right
     h1 "Alright, time's up, hand them in."
-    h1 "*looks at MC's paper"
-    h1 "*under her breath"
+    # h1 "*looks at MC's paper"
+    # h1 "*under her breath"
     h1 "\[What is wrong with this kid.\]"
-    h1 "Kay, I'm (insert name), registration number (insert NIM), and I'm going to be your practice assistant for today."
+    h1 "Kay, let me introduce my self."
+    h1 "I'm going to be your practice assistant for today."
     h1 "If you need any help for today's session, feel free to reach out."
     h1 "Your module for today will be Measurement and Physical Data Processing."
     h1 "I want you guys to split into three groups to make things faster. "
@@ -206,24 +218,25 @@ label start:
 
     scene lab meja
 
-    "*time skip, MC's group is tasked with this bad boy"
-    "Insert gambar regresi linier"
-    "*big F to him"
+    # "*time skip, MC's group is tasked with this bad boy"
+    # "Insert gambar regresi linier"
+    # "*big F to him"
     
     show asprak_senpai at right
 
-    h1 "*approaches MC, who is trying to figure out how to use a vernier caliper"
+    # h1 "*approaches MC, who is trying to figure out how to use a vernier caliper"
     h1 "You got the length of the first block, already?"
 
-    you "Uhh, yeah? It's *looking at the caliper around 9.255 cm."
+    you "Uhh, yeah? It's around 9.255 cm."
 
     show asprak_surprised at right
+
     h1 "What? How on earth did you get that number? Let me check."
     
-    
-    you "*measures"
+    # you "*measures"
 
     show asprak_disgust at right
+
     h1 "It says 9.55 cm."
 
     you "But-"
@@ -239,6 +252,7 @@ label start:
     scene lab papan2
 
     show asprak_senpai at right
+
     h1 "Alright, the time for measurement is up. Get your journals, we're writing the Report."
     h1 "Before we start, I want to stress that the bulk of the score is at the observation and discussion part of your report, so make them well."
     h1 "Also, for Group 4, you can take out your calculators to get the regression equation."
@@ -248,7 +262,7 @@ label start:
 
     scene lab loker_buka
 
-    you "*fumbles around his bag and lab coat"
+    you "\[It better be inside my bag.\]"
 
     show asprak_senpai at right
     h1 "Is something matter?"
@@ -259,66 +273,70 @@ label start:
 
     show asprak_disgust at right
     h1 "And I thought you couldn't mess up more. Go pair up with a friend."
+
+    scene black
     "*time skips, reports are submitted"
-    hide asprak_disgust
+
     scene lab papan2
 
     show asprak_senpai at right
     h1 "Aaand, we're done. Thank you for coming to today's session."
-    h1 "(MC), a word?"
+    h1 "A word?"
     you "Am I in trouble?"
     h1 "For now, no. But you have taken quite the attention of other assistants."
     h1 "The assistants and practice chief have agreed to not go too rough on minor infractions, but looking at how your practice went, I think I have to warn you."
     h1 "Just make sure to come on time and come prepared. Capiche?"
     you "Understood."
     h1 "Good. Have a nice day, take care."
-    hide asprak_senpai
-
-    you "*pack his things and left the lab"
-
+    
+    
     scene lab lorong_pulang
 
     you "\[Well that went fantastic. Getting myself in the assistant's sight. What a wonderful way to start my week.\]"
-    you "*still walking, reminisces on his senpai"
+    # you "*still walking, reminisces on his senpai"
     you "\[But she's a lowkey cutie, though.\]"
 
+    scene black
     "*time skip to the afternoon, MC has finished his class for the day and just arrived at his mix-gender dorm"
 
     scene kos bukakunci with Pause(1.5)
 
     scene kos tiduran
 
-    you "*laying down on his bed"
     you "\[Man, do I not love studying in ITB.\]"
     you "*reminisces on FL1 again"
     you "\[Stop thinking about her, you simp.\]"
-    you "*stomach rumbles"
+    you "\[...\]"
+    you "\[I haven't eaten anything today.\]"
     you "\[Welp, I guess it's raid-the-fridge o'clock.\]"
 
-    scene dapur_kulkas
+    scene kulkas tutup
+    you "\[Let's see what's inside.\]"
 
-    you "*walks to the lounge, opens the fridge, and finds a masterless oreo"
+    scene kulkas buka
+    you "\[Free oreo!\]"
     you "\[They didn't call me a corsair back at high school for nothing.\]"
 
-    you "*while reaching said oreo, he finds a bag of chips in one of the drawers"
-    you "\[What kind of psychopath chills their chips?\]"
+    scene kulkas oreo
+    you "\[Anyway what kind of psychopath chills their chips?\]"
 
     play sound bukujatoh
     you "\[Huh?\]"
+    you "\[What was that sound?\]"
 
     scene kos sofa_far
 
-    "*MC looks around to find the source, only to see FL1 laying on a sofa. "
-    "She wears (insert clothes, don't wanna be held liable for the details), one hand inside a bag of chips, another hand just hanging out from the sofa."
-    "Apparently, she fell asleep while reading a manga and got startled by it being dropped."
-    "Reaching down to get the fallen manga, she sees MC by the fridge looking at her, dumbfounded."
+    # "*MC looks around to find the source, only to see FL1 laying on a sofa. "
+    # "She wears one hand inside a bag of chips, another hand just hanging out from the sofa."
+    # "Apparently, she fell asleep while reading a manga and got startled by it being dropped."
+    # "Reaching down to get the fallen manga, she sees MC by the fridge looking at her, dumbfounded."
 
-    scene kos sofa_close
+    # scene kos sofa_close
 
     you "Uhh, hi?"
 
     show asprak_surprised at right
-    h1 "*squeals"
+    # h1 "*squeals"
     h1"YOU DIDN'T SEE ANYTHING!"
     h1"*FL1 grabs her stuff and sprints to her room"
 
@@ -329,7 +347,7 @@ label start:
     you "\[...\]"
     you "\[You know what? I'm not hungry.\]"
 
-    scene dapur_kulkas ###########
+    scene kulkas oreo
 
     you "*returns the oreo and heads back to his room"
 
@@ -584,7 +602,7 @@ label start:
 
     # #########################################################################################################################################
 
-    scene kamar 
+    scene kos tiduran
 
     you "*stomach rumbles"
     you "\[I literally just ate four hours ago.\]"
@@ -595,7 +613,9 @@ label start:
 
     you "*orders a martabak manis"
 
-    scene gofood alert
+    show gofood alert
+    
+    # black screen gofood
         
     "*his order arrives. He takes it and went to the lounge"
 
@@ -784,6 +804,11 @@ label start:
     you "*threw his pen so hard it fucking broke"
     you "\[Aight, fuck this shit.\]" 
     you "*proceeds to draw the ugliest, pure undecipherable flowchart"
+
+    scene black
+
+    scene kamar bangun
+
     you "*his 6 am alarm goes off"
     you "\[Great, no fucking sleep.\]"
 
@@ -847,7 +872,7 @@ label start:
     "*Suddenly, he faints on his way to the desk"
     hide asprak_surprised
 
-    scene uks
+    scene hbed
 
     "*After some time, he wakes up in the infirmary"
 
@@ -1041,7 +1066,7 @@ label start:
     # hide asprak_senpai_blush
     "*time skip, they arrive at their dorm"
 
-    scene kos luar
+    scene kos datang
 
     show asprak_senpai at right
     
@@ -1162,7 +1187,7 @@ label start:
 
     "*time skip to Thursday"
 
-    scene kos meja
+    scene kos mejabelajar
 
     "*MC just finished Praktikum 2 Pengkom"
     "*he couldn't understand a thing"
@@ -1185,6 +1210,10 @@ label start:
 
     h1 "My brother in harmonia progressio, I'm literally watching SpongeBob at the living room."
 
+    scene kos sofa_close
+
+    show asprak_senpai at right
+    
     you "*opens his door and heads to the lounge"
     you "*sees FL1 laying on the sofa while munching down an ice cream sandwich"
     you "So, you're free?"
