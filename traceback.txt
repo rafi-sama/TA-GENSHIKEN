@@ -1,36 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 131, in script
-    scene kamar bangun with vpunch(1)
-  File "game/script.rpy", line 131, in <module>
-    scene kamar bangun with vpunch(1)
-Exception: Not a displayable: 1
+  File "game/script.rpy", line 629, in script
+    hide asprak_casual with Dissolve
+Exception: Expected transition to be a displayable, not a <partial <class 'renpy.display.transition.Dissolve'> () {'old_widget': <renpy.display.layout.Fixed object at 0x000000000e4312b0>, 'new_widget': <renpy.display.layout.Fixed object at 0x0000000003b890d0>}>
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 131, in script
-    scene kamar bangun with vpunch(1)
-  File "D:\Renpy\renpy-8.0.3-sdk\renpy\ast.py", line 1654, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "D:\Renpy\renpy-8.0.3-sdk\renpy\python.py", line 1092, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\Renpy\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 131, in <module>
-    scene kamar bangun with vpunch(1)
-  File "D:\Renpy\renpy-8.0.3-sdk\renpy\display\motion.py", line 300, in Move
-    return Motion(Interpolate(startpos, endpos),
-  File "D:\Renpy\renpy-8.0.3-sdk\renpy\display\motion.py", line 102, in __init__
-    self.add(child)
-  File "D:\Renpy\renpy-8.0.3-sdk\renpy\display\layout.py", line 207, in add
-    child = renpy.easy.displayable(d)
-  File "D:\Renpy\renpy-8.0.3-sdk\renpy\easy.py", line 140, in displayable
-    raise Exception("Not a displayable: %r" % (d,))
-Exception: Not a displayable: 1
+  File "game/script.rpy", line 629, in script
+    hide asprak_casual with Dissolve
+  File "D:\Renpy\renpy-8.0.3-sdk\renpy\ast.py", line 1658, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "D:\Renpy\renpy-8.0.3-sdk\renpy\exports.py", line 1657, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "D:\Renpy\renpy-8.0.3-sdk\renpy\display\core.py", line 2798, in do_with
+    return self.interact(trans_pause=True,
+  File "D:\Renpy\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Renpy\renpy-8.0.3-sdk\renpy\display\core.py", line 3757, in interact_core
+    raise Exception("Expected transition to be a displayable, not a %r" % trans)
+Exception: Expected transition to be a displayable, not a <partial <class 'renpy.display.transition.Dissolve'> () {'old_widget': <renpy.display.layout.Fixed object at 0x000000000e4312b0>, 'new_widget': <renpy.display.layout.Fixed object at 0x0000000003b890d0>}>
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.3.22090809
 My Cute Asprak is My Neighbour 1.0
-Wed Nov  9 15:15:13 2022
+Fri Nov 11 17:31:57 2022

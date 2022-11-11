@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 662: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    "\[Well, as long as she's happy, I don't care.\]" 
-    ^
+File "game/script.rpy", line 1656: Menu does not contain any choices.
+    menu:
+         ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun Nov  6 13:45:52 2022
+Fri Nov 11 20:26:20 2022
