@@ -76,12 +76,16 @@ image ag = "characters/attendance_guy.png"
 # non character
 
 image tangan hp = "characters/pegang_hp.png"
-image blink = "blink.png"
+image tangan martabak = "characters/pegang_hp_martabak.png"
+image blink = "characters/blink.png"
+image martabak kanan = "characters/martabak_kanan.png"
+image nametag = "characters/nametag.png"
+image isipapan = "characters/isi_papan.png"
 
 
 # background
 
-image black = "black.png"
+image black = "scenes/black.png"
 image kamar bangun = "scenes/pov_bangun_tidur.jpg"
 image kamar bangun_blink = "scenes/pov_bangun_tidur_blink.jpg"
 image gerbang1 = "scenes/gerbang1.jpg"
@@ -142,12 +146,14 @@ image mixue = "scenes/mixue.jpg"
 image xxi = "scenes/xxi.jpg"
 image hbed = "scenes/pov_hbed.jpg"
 image park = "scenes/park.jpg"
-
+image hacker = "scenes/laptop_hacker.jpg"
+image flowchart = "scenes/flowchart.jpg"
 # sound
 
 define audio.alarm = "sound/sfx/alarm.mp3"
 define audio.yawn = "sound/sfx/yawn.mp3"
 define audio.bukujatoh = "sound/sfx/bukujatoh.mp3"
+define audio.bgm = "sound/frozen_winter.mp3"
 
 # The game starts here.
 label start:
@@ -162,6 +168,8 @@ label start:
     scene kamar bangun_blink with Dissolve(3)
 
     stop sound
+
+    play music bgm loop
 
     # you "*wakes up at 06.30 AM on a Monday"
     
@@ -228,6 +236,8 @@ label start:
     h1 "Done? Good. Get your pen and papers, here's your test."
  
     scene lab papan2 with vpunch
+
+    show isipapan
 
     you "\[What am I looking at?\]"
     you "\[What on earth is a regression analysis?\]"
@@ -323,7 +333,6 @@ label start:
     h1 "Before we start, I want to stress that the bulk of the score is at the observation and discussion part of your report, so make them well."
     h1 "Also, for Group 4, you can take out your calculators to get the regression equation."
 
-    hide asprak_senpai
     you "Oh, no."
 
     scene lab loker_buka
@@ -377,8 +386,6 @@ label start:
     scene kos tiduran
 
     you "\[Man, do I not love studying in ITB.\]"
-    you "*reminisces on FL1 again"
-    you "\[Stop thinking about her, you simp.\]"
     you "\[...\]"
     you "\[I haven't eaten anything today.\]"
     you "\[Welp, I guess it's raid-the-fridge o'clock.\]"
@@ -415,29 +422,41 @@ label start:
     show asprak_shirt suprisedblush_ng at center
 
     h1"YOU DIDN'T SEE ANYTHING!"
-    h1"*FL1 grabs her stuff and sprints to her room"
 
     scene kos lorong2
 
     you "\[...\]"
     you "\[The fuck just happened?\]"
     you "\[...\]"
-    you "\[You know what? I'm not hungry.\]"
 
     scene kulkas oreo
 
-    you "*returns the oreo and heads back to his room"
+    you "\[You know what? I'm not hungry.\]"
+
+    scene black with Dissolve(1)
 
     "*time skip to the next day"
-    scene pov_bangun_tidur
+    stop music
 
+    play sound alarm loop
 
-    show tangan hp with moveinbottom
-    "*alarms blaring, MC wakes up, still can't wrap his head around yesterday's incident"
-    hide tangan with moveoutbottom
+    play voice yawn noloop
+
+    scene black with Dissolve(4)
+
+    # play music "sound/Bar_at_the_port.mp3" loop 
+
+    scene kamar bangun_blink with Dissolve(3)
+
+    stop sound
+
+    play music bgm loop
+
+    # you "*wakes up at 06.30 AM on a Monday"
     
+    scene kamar bangun with Dissolve(2)
+
     you "\[Did yesterday really happen? Was that really her?\]"
-    you "*reminisces once more, fuckin simp"
     you "\[Why can't I stop thinking about her?\]"
 
     "*MC gets up and prepares for his day. Opening his door, our clumsy MC bumps into another person"
@@ -454,22 +473,17 @@ label start:
 
     scene kos gerbang
 
-    "*MC peers up and looks at the exit to find FL1 already closing the dorm's gate."
+    you "\[Is it really her?\]"
 
     scene kos luar
 
     you "\[Gotta take a shot.\]"
-    you "*MC pockets his phone and runs up to her"
-
-
-    # *he asked as he caught up to her while walking backwards
 
     scene jalan motor2
 
     you "Uhh, hey! Hey! How are you this morning?" 
 
     show asprak_casual flat1 at left #mungkin bakal ada ekspresi lain
-    h1 "*doesn't answer, eyes straight ahead"
 
     you "Uhh, you remember me, right? It's me, from the lab yesterda-"
 
@@ -477,13 +491,13 @@ label start:
 
     show asprak_casual suprised at left
 
-    h1 "*pulls MC closer to the side of the road since there's a car heading their way"
+    h1 "Careful!"
 
     scene jalan kosong1
 
     show asprak_casual flat1 at left
 
-    h1 "*spins MC around and tells him to walk correctly"
+    h1 "Pheww.."
 
     scene jalan motor2
 
@@ -492,7 +506,7 @@ label start:
     h1 "Dummy, look where you're going when you walk."
 
     you "Oh shit."
-    you "*looks at the car that just passed"
+
     you "Thanks."
 
     you "So uhh, you're having a morning class, too?"
@@ -510,30 +524,27 @@ label start:
 
     you "\[She's damn cute, I get that. But I didn't expect that big of a gap moe.\]"
 
-    "*suddenly, people around him are shuffling around and lecturer is picking up their stuff"
-
     you "\[Hold up, the class is finished?\]"
     you "\[But I haven't understood shit.\]"
     you "\[Welp, that's two extra hours of independent learning.\]"
     you "*stomach rumbles"
     you "\[Oh yeah, I haven't had breakfast.\]"
 
+    scene black with Dissolve(1)
+
     you "*MC got up and went to cafetaria and orders his lunch"
 
     scene kantin ramai3
 
-    you "*bumps into his friend"
     you "Oh hey, getting some chow, too?"
 
-    show friend_1 casual at right
+    show friend_1 casual at center
     friend "Hey! Yeah. Didn't understand anything at class, my brain was too busy asking whether I should buy ayam geprek or ayam penyet for lunch."
 
     you "Damn, same. By the way, got any seats yet?"
-    you "*MC eyes around to find an empty seat and instantly saw FL1 sitting alone at the far end of the cafetaria"
-
+    
     friend "Nah, I'm taking it away, gonna have a group work right after this."
 
-    friend "*looks at MC, looks at where he's looking"
     friend "But I guess you have a seat in mind already."
 
     you "W-What? Oh, no, I guess you're misinterpreting something."
@@ -543,25 +554,22 @@ label start:
     you "What? No! It's just that we happen to live in the same dorm."
 
     friend "Real shit? Well you're in luck, my friend."
-    "*both of their orders are finished"
+
     friend "Welp, gotta get going. See you around!"
-    friend "*leans to MC and whispers"
+
     friend "And good luck."
 
     hide friend_1 
 
     you "Hey, come back here! I'm not done yet!"
 
-
     scene kantin meja
 
-
     show asprak_casual eyesclosed at right
-    you "\[But coming to it again, why did I notice her that quickly in the first place?\]"
-    you "*breathes in"
-    you "\[Here we go.\]"
 
-    you "*MC approaches the table"
+    you "\[But coming to it again, why did I notice her that quickly in the first place?\]"
+
+    you "\[Here we go.\]"
 
     you "Hey! Is this seat taken?"
 
@@ -571,14 +579,12 @@ label start:
 
     show asprak_casual suprisedblush at right
   
-    you "*sits and starts to eat his meal"
-    "*they both eat in silence, not daring to break the ice"
+    you "\[Do I make her uncomfortable?\]"
 
     show asprak_casual shy at right
-    you "\[Do I make her uncomfortable?\]"
-    "*looks around for a vacant seat, but there isn't any"
+
     you "\[Better eat this quickly.\]"
-    you "*finishing his lunch, he looks up to see FL1 staring at him"
+
     you "I-I think I ought to change tables."
 
     show asprak_casual sad at right
@@ -588,9 +594,6 @@ label start:
     show asprak_casual smile2 at right
 
     you "Okay?"
-
-
-    "*MC continues show asprak_casual smile2 at rightto eat his lunch in silence"
 
     show asprak_casual shy at right
 
@@ -639,27 +642,29 @@ label start:
     scene black
 
     "*time skips to the next day"
+    stop music
 
-    scene pov_bangun_tidur
+    play sound alarm loop
 
-    you "*wakes up startled"
+    play voice yawn noloop
+
+    scene black with Dissolve(4)
+
+    # play music "sound/Bar_at_the_port.mp3" loop 
+
+    scene kamar bangun_blink with Dissolve(3)
+
+    stop sound
+
+    play music bgm loop
+    
+    scene kamar bangun with Dissolve(2)
+
     you "\[How come has the alarm not gone berserk yet? My sleep quality is getting a bit too suspicious.\]"
-    #Hey, you. You're finally awake. *some 4th wall skyrim shit ?
 
-    # you "\[Who the fuck is that?\]"
-    show pegang_hp with moveinbottom
-    you "*looks at phone for time"
     you "\[There's no way it's still 5 am. That was the best sleep I had in weeks. It must be 5 pm.\]"
-    hide pegang_hp with moveoutbottom
 
-    you "*looks out his windows. The sky is still dark"
     you "\[Well I'll be damned.\]"
-
-    show pegang_hp with moveinbottom
-    you "*turns off alarms"
-    hide pegang_hp with moveoutbottom
-
-    you "*reminisces on yesterday's encounter with senpai"
 
     you "\[Welp, better get ready and find her again.\]"
     
@@ -669,10 +674,10 @@ label start:
 
     scene kantin ramai3
 
-    you "*orders his food and looks around the cafeteria"
-    you "\[Where is she?\]"
+    you "\[Where could she be..?\]"
 
     show friend_1 casual
+
     friend "Yo! Wanna join us?"
     you "\[Meh, I'll look for her at the lab after class.\]"
 
@@ -700,10 +705,12 @@ label start:
     you "\[I literally just ate four hours ago.\]"
     you "*rumbles some more"
     you"\[Now, should I order a balanced meal like a responsible college student should or should I order diabetes incarnate?\]"
-    "*spoiler alert, his intrusive thought wins"
-    you "\[A wise person once said an apple a day keeps the doctor away. Unfortunately, I'm not a wise guy.\]"
 
-    you "*orders a martabak manis"
+    show tangan martabak with moveinbottom
+
+    you "\[A wise person once said an apple a day keeps the doctor away. Unfortunately, I'm not a wise guy.\]"
+    
+    hide tangan with moveoutbottom
     
     scene black
 
@@ -713,7 +720,6 @@ label start:
 
     show asprak_shirt flat1 at center
 
-    you "\[Time to shoot my shot\]"
     you "Fancy seeing you here."
 
     show asprak_shirt suprised at center
@@ -734,21 +740,24 @@ label start:
 
     scene kos meja_kosong
 
-    show asprak_shirt smile1 at left
+    show martabak kanan
 
-    you "*opens the martabak"
     you "Here, take some."
 
+    show asprak_shirt smile1 at left
+
     h1 "Ah, thank you."
+
+    you "Wanna go watch something?"
+
+    h1 "Sure!"
+
+    you "I'll grab my laptop real quick"
 
     scene kos meja_laptop
 
     show asprak_shirt smile1 at left
-
-    you "*turns the TV on"
-   
-    "*they both sat and enjoy the sweet delicacy in silence"
-
+  
     you "\[Gotta break the ice.\]"
 
     show asprak_shirt smile2 at left
@@ -789,10 +798,10 @@ label start:
 
     h1 "I have watched, played, and read the franchise to oblivion."
 
-    you "*kinda shocked pikachu face"
     you "\[H-hol up. Played? S-she couldn't have played the OG VN right?\]"
 
     show asprak_shirt suprised at left
+
     h1 "Hey, are you okay? You look pretty shocked knowing I watch Fate."
 
     you "N-nothing. It's just that I rarely find someone that watches fate, too. By the way, which one is your favorite?"
@@ -820,7 +829,6 @@ label start:
 
     h1 "Ah, a fellow corsair."
 
-    you "*laughs"
     you "By the way, do you really love Fate that much?"
 
     show asprak_shirt smile2 at left
@@ -891,11 +899,10 @@ label start:
     show asprak_shirt smile1 at left
 
     h1 "By the way-"
-    "*interrupted by her phone vibrating"
 
     show asprak_shirt flat2 at left
 
-    h1 "Oh shit, I forgot I have a group work due tomorrow. They're asking for my progress."
+    h1 "Oh no, I forgot I have a group work due tomorrow. They're asking for my progress."
 
     you "Well? Get going already."
     
@@ -923,26 +930,39 @@ label start:
 
     scene black with Dissolve(1)
 
-    "*time skip to praktikum 2. MC's having an all-nighter trying to speedrun TP Fisika. Sadly, his WD-40 lubed brain is having a pretty hard time"
+    "*time skip to praktikum 2. MC's having an all-nighter trying to speedrun TP Fisika."
 
     scene kos mejabelajar
     
     you "\[GOTTA FINISH THE FLOWCHARTS.\]"
-    you "*checks his phone, his friend that had done his module the week before sends the procedure to derive an equation or something"
-    you "*got a step wrong"
-    you "FUCKING PIECE OF SHIT PHYSICS PRELIMINARY. DERIVE THIS, DERIVE THAT."
-    you "*sits down, trying to calm himself"
-    you "*chugs coffee that is more of a motor oil than coffee"
-    you "\[Aight. Calm down, calm down, calm DOWN, CALM THE FUCK DOWN.\]"
-    you "*threw his pen so hard it fucking broke"
+
+    scene flowchart
+
+    you "DERIVE THIS, DERIVE THAT."
+    you "\[Aight. Calm down, calm down, calm DOWN, CALM DOWN.\]"
     you "\[Aight, fuck this shit.\]" 
-    you "*proceeds to draw the ugliest, pure undecipherable flowchart"
+    "*proceeds to draw the ugliest, pure undecipherable flowchart"
 
-    scene black
+    scene black with Dissolve(1)
 
-    scene kamar bangun
+    stop music
+
+    play sound alarm loop
+
+    play voice yawn noloop
+
+    scene black with Dissolve(4)
+
+    # play music "sound/Bar_at_the_port.mp3" loop 
+
+    scene kamar bangun_blink with Dissolve(3)
+
+    stop sound
+
+    play music bgm loop
 
     you "*his 6 am alarm goes off"
+
     you "\[Great, no fucking sleep.\]"
 
     scene black with Dissolve(1)
@@ -951,20 +971,23 @@ label start:
 
     scene lab pintu_lab
 
-    you "*arrives at the lab entrance"
-    you "*takes his nametag off and presents it to the air"
+    show nametag with moveinbottom
+
+    you "Heres my tag.."
 
     show ag at left
+
     ag "Uhh, hey. I'm right here."
 
-    you "*got up from his trance and walked to the scanner"
     you "Oh, yeah. Sorry."
+
+    hide nametag with moveoutbottom
 
     hide ag 
 
-    you "*enters the lab and goes to his desk"
+    you "\[Pull yourself together!\]"
 
-    scene lab papan1
+    scene lab papan2
 
     show asprak_lab suprised at right
 
@@ -1012,8 +1035,6 @@ label start:
 
     h1 "Good."
 
-    hide asprak_senpai
-
     show blink with Dissolve(2)
     hide blink with Dissolve(1)
     show blink with Dissolve(2)
@@ -1022,7 +1043,6 @@ label start:
     show asprak_lab suprised at right
 
     h1 "Hey!! are you ok???"
-    hide asprak_surprised
 
     show black with Dissolve(2)
 
@@ -1047,40 +1067,32 @@ label start:
     h1 "You big dummy, why didn't you tell me you're sick?"
 
     show asprak_lab shyblush at right
-    h1 "Do you know how worried I was?"
 
-    you "*just nods his head, still can't believe he's in her lap while getting caressed"
+    h1 "Do you know how worried I was?"
 
     h1 "I mean, let's forget about you for once. Do you have any idea how dangerous it is to work half-awake IN A LABORATORY?"
     h1 "Do you even realize that you are a safety hazard at that moment?"
 
-    you  "*nods and blushes"
 
     show asprak_lab shy at right
 
     h1 "I mean, gosh, if you don't feel well, just say it. I don't want you to get hurt."
 
-    you "*silent"
-
     h1 "Hey, are you even listening?"
 
-    you "Yes. (clearly not listening)"
+    you "Yes..."
 
     show asprak_lab suprisedblush
 
     h1 "*realizes that she's still stroking his hair while scolding him"
-    h1 "*blushes too and stops stroking"
 
     you "Hey, why did you-"
-
-    h1 "*stands up, MC fell on his head"
 
     you "Ow."
     # hide asprak_senpai
     # show asprak_senpai_blush at right
     h1 "J-Just take the day off and take care of yourself!"
 
-    you "*sat back up"
     you "Hey, wait!"
 
     show asprak_lab shyblush at right
@@ -1089,32 +1101,36 @@ label start:
     
     hide asprak_lab # hide asprak_senpai_blush
 
-    you "*stands up, dumbfounded"
     you "Damn. That felt good."
 
-    scene black
+    scene black with Dissolve(4)
 
     "*time skip to the next day"
 
-    scene pov_bangun_tidur
+    stop music
 
-    you "*sits inside his room, he's free on Fridays"
+    play sound alarm loop
 
-    you "*reminiscing the lap pillow and headpats"
+    play voice yawn noloop
+
+    scene black with Dissolve(4)
+
+    # play music "sound/Bar_at_the_port.mp3" loop 
+
+    scene kamar bangun_blink with Dissolve(3)
+
+    stop sound
+
+    play music bgm loop
 
     you "\[GAHD DAMN.\]"
     you "\[I NEED IT MORE.\]"
     you "\[I FUCKING NEED MORE LAP PILLOWS.\]"
-    you "*slaps himself"
-    you "Control yourself, Me."
-    you "*decides to take a shower"
-    you "*gets dressed and gets out of his room"
-    you "*opens his door"
+    you "\[I think I'm going to take a little walk outside\]"
 
     scene kos bukapintu
 
     show asprak_shirt suprised at right
-    you "*FL1 stands right in front of it"
 
     you "Oh shit."
 
@@ -1125,6 +1141,7 @@ label start:
     you "Uhh, good morning?"
 
     show asprak_shirt shyblush at right
+
     h1 "How have you been? Are you okay?"
     
     you "Oh, I'm okay."
@@ -1135,6 +1152,7 @@ label start:
     you "No, really. I'm fine now. I just woke up early."
     
     show asprak_shirt smile2 at right
+
     h1 "Thank God you're okay."
     h1 "By the way, I'm really sorry for, well-"
 
@@ -1170,7 +1188,7 @@ label start:
 
     h1 "O-Okay."
 
-    scene black
+    scene black with Dissolve(1)
 
     "*time skip to the afternoon"
 
@@ -1178,9 +1196,7 @@ label start:
 
     show asprak_casual smile1 at right
 
-    you "*got out of his room at 4 and finds FL1 already waiting at the dorm's lounge"
-
-    # show asprak_senpai at right
+    you "\[Gosh, she's gorgeous\]"
 
     show asprak_casual eyesclosed at right
 
@@ -1267,9 +1283,6 @@ label start:
 
     you "Reduce the moe gap. I don't think I can hold my laughter if I see you in your asprak mode next session."
 
-    h1 "*giggles"
-    h1 "*leans in to MC and hugs him"
-
     show asprak_casual eyesclosed at center
 
     h1 "Thank you."
@@ -1280,12 +1293,9 @@ label start:
 
     h1 "So, uhhh."
     h1 "Bye, have a good night!"
-    h1 "*runs to her room in embarrassment"
     
     hide asprak_casual with Dissolve(1)
 
-
-    you "*still can't comprehend what just happened"
     you "\[I'm not washing my clothes.\]"
 
     scene black with Dissolve(1)
@@ -1294,16 +1304,14 @@ label start:
 
     scene kantin ramai2
 
-    you "*has got his food and is looking for a seat"
-    you "*sees the spot in front of FL1 is empty"
+    you "\[Where should I sit down?\]"
 
     scene kantin meja
 
     show asprak_casual smile2 at right
 
-    h1 "*sees him and waves"
+    h1 "Come here!"
 
-    you "*scoots there"
     you "Fancy seeing you here."
 
     show asprak_casual smile1 at right
@@ -1330,7 +1338,6 @@ label start:
 
     show asprak_casual suprised at right
 
-    h1 "*caught off guard"
     h1 "Oh, hey there, I'm go-"
 
     show asprak_casual flat1 at right
@@ -1339,7 +1346,7 @@ label start:
     friend2 "Did you get yourself a boyfriend?"
     # hide asprak senpai
     # show asprak_senpai_blush at left
-    you "*his brain short circuited"
+
     you "\[Boyfriend?\]"
     you "\[Am I in a relationship with her?\]"
     you "\[Well, of course I am, but is it that kind of relationship?\]"
@@ -1350,8 +1357,6 @@ label start:
     show asprak_casual smile1 at right
 
     h1 "Come on, give him some slack."
-
-    you "*moves aside"
 
     show asprak_casual smile2 at right
 
@@ -1394,17 +1399,16 @@ label start:
     scene black with Dissolve(1)
 
     "*time skip to Thursday"
-
-    scene kos mejabelajar
-
+    
     "*MC just finished Praktikum 2 Pengkom"
     "*he couldn't understand a thing"
-    "\[What was that.\]"
-    "\[I'mma go touch some grass.\]"
-    "*he prepares for a walk, but then he remembered something"
-    "\[You know what will make this stroll better?\]"
-    "*whips out his phone"
-    "*calls FL1"
+
+    scene hacker
+
+    you "\[What was that.\]"
+    you "\[I'mma go touch some grass.\]"
+    you "\[You know what will make this stroll better?\]"
+    you "\[Lets call her\]"
 
     show asprak_shirt eyesclosed at right
 
@@ -1469,7 +1473,7 @@ label start:
     you "But I'm the one th-"
     
     show asprak_shirt suprised at right
-    h1 "*looking at the menu"
+
     h1 "So, what do you want?"
 
     you "Uhh, I want something simple. Prolly a vanilla soft serve and a boba."
@@ -1482,7 +1486,7 @@ label start:
     show asprak_shirt suprised at right
 
     h1 "Damn, okay Anton Ego."
-    you "*heads to the cashier"
+    you "Ok, wait a minute"
 
     hide asprak_shirt
 
@@ -1495,8 +1499,6 @@ label start:
     h1 "Alright, we just have to wait for our ice cream now."
 
     you "Uh huh."
-
-    "*silence"
 
     show asprak_shirt smile1 at right
 
@@ -1526,7 +1528,6 @@ label start:
 
     h1 "So, got any girls on your sights, yet?"
 
-    you "*spits/choked on his water"
     you "Wh-What?"
 
     show asprak_shirt smile1 at right
@@ -1656,7 +1657,5 @@ label start:
     menu:
         "Back To Main Menu":
             return
-
-    hide asprak_senpai # hide asprak_senpai_blush
     
     return
